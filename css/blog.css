@@ -1,0 +1,20 @@
+/* Blog Page Specific Styles */
+.blog-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.blog-post {
+    margin-bottom: 50px;
+    background-color: var(--white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Add other blog-specific styles */

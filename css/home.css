@@ -1,0 +1,41 @@
+/* Home Page Specific Styles */
+.hero {
+    height: 80vh;
+    position: relative;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.featured {
+    padding: 80px 0;
+    background-color: var(--primary-color);
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Add other home-specific styles */

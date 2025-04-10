@@ -1,0 +1,19 @@
+/* Contact Page Specific Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--secondary-color);
+}
+
+/* Add other contact-specific styles */
