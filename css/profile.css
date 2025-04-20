@@ -1,4 +1,4 @@
-/* Profile Page Specific Styles - Fresh Implementation */
+/* Profile Page Specific Styles  */
 
 /* Main Profile Container */
 .profile-main {
@@ -538,7 +538,7 @@
     }
 }
 
-/* Fix responsive issues with the edit profile modal */
+/* Responsive adjustments for the edit profile modal */
 @media (max-width: 480px) {
     .modal-content {
         width: 95%;
@@ -580,7 +580,7 @@
     }
 }
 
-/* Fix auth modal text colors */
+
 .auth-modal .modal-content {
     background-color: #ffffff;
     border-radius: 15px;
@@ -667,7 +667,7 @@
     }
     
     .auth-modal .auth-tab.active {
-        color: #f8d7da; /* Keep accent color for active tab */
+        color: #f8d7da; 
     }
 }
 

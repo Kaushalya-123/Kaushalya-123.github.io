@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkAuth = () => {
         const isLoggedIn = localStorage.getItem('isLoggedIn');
         if (!isLoggedIn) {
-            authModal.style.display = 'flex'; // Changed to flex for better centering
+            authModal.style.display = 'flex'; 
             profileMain.style.display = 'none';
         } else {
             authModal.style.display = 'none';
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             authTabs.forEach(t => t.classList.remove('active'));
             authForms.forEach(f => f.classList.remove('active'));
             
-            // Add active class to clicked tab and corresponding form
+            // Active class for clicked tab and corresponding form
             tab.classList.add('active');
             const formId = tab.dataset.tab === 'signin' ? 'signInForm' : 'signUpForm';
             document.getElementById(formId).classList.add('active');

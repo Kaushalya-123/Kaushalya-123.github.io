@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             }).join('');
 
-            // Add event listeners for remove buttons
+            //Event listeners for remove buttons
             this.habitList.querySelectorAll('.remove-habit-btn').forEach(btn => {
                 btn.addEventListener('click', (e) => this.removeHabit(e));
             });
@@ -261,12 +261,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
 
-            // Add empty cells for days before the first day of the month
+            // Empty cells for days before the first day of the month
             for (let i = 0; i < firstDay.getDay(); i++) {
                 calendarHTML += '<div class="calendar-day empty"></div>';
             }
 
-            // Add cells for each day of the month
+            // Cells for each day of the month
             for (let day = 1; day <= lastDay.getDate(); day++) {
                 const date = new Date(today.getFullYear(), today.getMonth(), day);
                 const dateStr = this.formatDate(date);

@@ -1,4 +1,4 @@
-/**
+/*
  * Home Page Specific JavaScript
  * Handles functionality unique to the home page
  */

@@ -59,8 +59,7 @@ if (newsletterForm) {
         e.preventDefault();
         const email = newsletterForm.querySelector('input[type="email"]').value;
 
-        // Here you would typically send the email to your server or a service like Mailchimp
-        // For now, we'll just show an alert
+        //alert
         alert(`Thank you for subscribing with ${email}! We'll be in touch soon.`);
 
         // Reset the form
@@ -78,8 +77,7 @@ if (contactForm) {
         const subject = contactForm.querySelector('#subject').value;
         const message = contactForm.querySelector('#message').value;
 
-        // Here you would typically send the form data to your server
-        // For now, we'll just show an alert
+        //alert
         alert(`Thank you for your message, ${name}! We'll get back to you soon.`);
 
         // Reset the form
