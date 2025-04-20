@@ -1,86 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyond Boundaries</title>
+    
+    <title>About - Beyond Boundaries</title>
+
+    <!-- External CSS Dependencies -->
+    <!-- Bootstrap CSS for responsive grid and components -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="/images/logoimage.jpeg" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logoimage.jpeg" type="image/x-icon">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header - Use this same header in all pages -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <img src="images/logoimage.jpeg" alt="logo" width="60">
-                    <h1>Beyond Boundaries</h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="tracker.html">Tracker</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+              <!------------------------- Header Section - Consistent across all pages ------------------------>
+   <header>
+    <div class="container">
+        <nav>
+            <!-- Logo and Site Title -->
+            <div class="logo">
+                <a href="/index.html"><img src="images/logoimage.jpeg" alt="logo" width="60"></a>
+                <h1>Beyond Boundaries</h1>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="about.html" data-i18n="about">About</a></li>
+                <li><a href="blog.html" data-i18n="blog">Blog</a></li>
+                <li><a href="tracker.html" data-i18n="tracker">Tracker</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <a href="profile.html" class="profile-icon">
+                    <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+            </div>
+            <!-- Mobile Menu Hamburger Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
 
+    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
             <h1>About</h1>
         </div>
     </section>
 
+    <!-- Main About Content -->
     <section class="about-content">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-img">
-                    <img src="/images/about.jpg" alt="About Khushi">
-                </div>
-                <div class="about-text">
-                    <h2>Hello, I'm Khushi</h2>
-                    <p>Welcome to my little corner of the internet. I created this space to share my passion for mindful living, creativity, and finding joy in the everyday moments.</p>
-                    <p>I believe that life is made up of small, beautiful moments that often go unnoticed in our busy lives. My mission is to help you slow down, appreciate these moments, and create a life that feels meaningful and fulfilling.</p>
-                    <p>Through my blog, I share insights on intentional living, self-care practices, creative pursuits, and creating a home that nurtures your soul. I hope to inspire you to embrace a life of intention, creativity, and everyday flourishing.</p>
-                    <h3>My Story</h3>
-                    <p>My journey began when I realized that despite having a seemingly perfect life on paper, I felt disconnected and unfulfilled. I was constantly chasing the next big achievement, never taking the time to appreciate what I already had.</p>
-                    <p>This realization led me on a path of self-discovery and intentional living. I began to explore practices that helped me slow down, connect with myself, and find joy in the present moment. Through this journey, I discovered my passion for sharing these insights with others.</p>
-                    <p>When I'm not writing or creating content for the blog, you can find me reading a good book, experimenting with new recipes in the kitchen, or exploring nature with my camera in hand.</p>
-                    <h3>Let's Connect</h3>
-                    <p>I'm so glad you're here, and I'd love to get to know you better. Feel free to reach out through the <a href="contact.html">contact page</a> or connect with me on social media.</p>
-                    <div class="social-links about-social">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+            <!-- Author Introduction -->
+            <div class="author-intro">
+                <div class="about-grid">
+                    <div class="about-img">
+                        <img src="./images/about.jpg" alt="About Khushi">
                     </div>
+                    <div class="about-text">
+                        <h2>Hello, We're K&K</h2>
+                        <p>Welcome to our little corner of the internet. We created this space to share our passion for mindful living, creativity, and finding joy in the everyday moments.</p>
+                        <p>We believe that life is made up of small, beautiful moments that often go unnoticed in our busy lives. Our mission is to help you slow down, appreciate these moments, and create a life that feels meaningful and fulfilling.</p>
+                        <p>Through our blog, we share insights on intentional living, self-care practices, creative pursuits, and creating a home that nurtures your soul. We hope to inspire you to embrace a life of intention, creativity, and everyday flourishing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission Statement -->
+            <div class="mission">
+                <h3>Our Story</h3>
+                <p>Our journey began when we realized that despite having a seemingly perfect life on paper, we felt disconnected and unfulfilled. We were constantly chasing the next big achievement, never taking the time to appreciate what we already had.</p>
+                <p>This realization led us on a path of self-discovery and intentional living. We began to explore practices that helped us slow down, connect with our inner selves, and find joy in the present moment. Through this journey, we discovered our passion for sharing these insights with others.</p>
+            </div>
+
+            <!-- Journey Timeline -->
+            <div class="timeline">
+                <p>When we're not writing or creating content for the blog, you can find us reading a good book, experimenting with new recipes in the kitchen, or exploring nature with our cameras in hand.</p>
+                <h3>Let's Connect</h3>
+                <p>We're so glad you're here, and we'd love to get to know you better. Feel free to reach out through the <a href="contact.html">contact page</a> or connect with us on social media.</p>
+                <div class="social-links about-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Values Section -->
     <section class="values">
         <div class="container">
-            <h2 class="section-title">My Values</h2>
+            <h2 class="section-title">Our Values</h2>
             <div class="values-grid">
                 <div class="value-item">
                     <div class="value-icon">
                         <i class="fas fa-heart"></i>
                     </div>
                     <h3>Authenticity</h3>
-                    <p>I believe in being true to yourself and living a life that aligns with your values and passions.</p>
+                    <p>We believe in being true to yourself and living a life that aligns with your values and passions.</p>
                 </div>
                 <div class="value-item">
                     <div class="value-icon">
@@ -107,11 +141,12 @@
         </div>
     </section>
 
+    <!-- Newsletter Subscription Section -->
     <section class="newsletter">
         <div class="container">
             <div class="newsletter-content">
                 <h2>Join the Community</h2>
-                <p>Sign up for my newsletter to receive updates, exclusive content, and more.</p>
+                <p>Sign up for our newsletter to receive updates, exclusive content, and more.</p>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Your email address" required>
                     <button type="submit" class="btn">Subscribe</button>
@@ -120,8 +155,8 @@
         </div>
     </section>
 
-    <!-- Footer - Use this same footer in all pages -->
-    <footer>
+     <!---------------------------- Footer Section - Consistent across all pages ------------------------------->
+     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
@@ -130,10 +165,10 @@
                     </div>
                     <p>Empowering individuals to live mindfully, embrace creativity, and find joy in everyday moments. Join our community of like-minded souls on a journey of self-discovery.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/beyondboundaries_blog" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.facebook.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/beyond_bounds" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
 
@@ -154,11 +189,12 @@
                     <h3>Categories</h3>
                     <div class="footer-links">
                         <ul>
-                            <li><a href="#">Mindfulness</a></li>
-                            <li><a href="#">Wellness</a></li>
-                            <li><a href="#">Lifestyle</a></li>
-                            <li><a href="#">Creativity</a></li>
-                            <li><a href="#">Personal Growth</a></li>
+                            <li><a href="categories/mindfulness.html">Mindfulness</a></li>
+                            <li><a href="categories/wellness.html">Wellness</a></li>
+                            <li><a href="categories/lifestyle.html">Lifestyle</a></li>
+                            <li><a href="categories/creativity.html">Creativity</a></li>
+                            <li><a href="categories/personal-growth.html">Personal Growth</a></li>
+                            <li><a href="categories/home.html">Home & Living</a></li>
                         </ul>
                     </div>
                 </div>
@@ -184,7 +220,7 @@
 
             <div class="footer-bottom">
                 <div class="copyright">
-                    <p>&copy; 2023 Beyond Boundaries. All Rights Reserved.</p>
+                    <p>&copy; 2025 Beyond Boundaries. All Rights Reserved.</p>
                 </div>
                 <div class="footer-bottom-links">
                     <a href="#">Privacy Policy</a>
@@ -195,7 +231,10 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+
+    <!-- JavaScript Dependencies -->
+    <script src="js/common.js"></script>
+    <script src="js/about.js"></script>
 </body>
 </html>
 

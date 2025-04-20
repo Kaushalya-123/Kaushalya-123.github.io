@@ -1037,7 +1037,7 @@ footer {
     font-weight: bold;
     padding: 10px;
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--black);
     border-radius: 5px;
 }
 
@@ -1197,6 +1197,65 @@ footer {
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.habit-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.habit-check {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.habit-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.remove-habit-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    opacity: 0.6;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.remove-habit-btn:hover {
+    opacity: 1;
+    color: #ff4444;
+    transform: scale(1.1);
+}
+
+.habit-item:hover .remove-habit-btn {
+    opacity: 0.8;
+}
+
+/* Animation for removing habits */
+.habit-item.removing {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .habit-actions {
+        gap: 10px;
+    }
+    
+    .remove-habit-btn {
+        padding: 8px;
+    }
 }
 
 .mood-stats {
@@ -1231,6 +1290,37 @@ footer {
     font-size: 12px;
     white-space: nowrap;
     z-index: 1000;
+}
+
+/* Profile Icon Styles */
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-icon {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.profile-icon:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+/* Make profile icon responsive */
+@media (max-width: 768px) {
+    .profile-icon {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-icon {
+        font-size: 1.2rem;
+    }
 }
 
 

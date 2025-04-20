@@ -1,11 +1,17 @@
-// Tracker specific functionality
+/**
+ * Habit and Mood Tracker functionality
+ * Manages user's habits, moods, and their tracking data
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Habit tracking functionality
     class HabitTracker {
         constructor() {
+            // Initialize tracker state and DOM elements
             this.habits = this.loadHabits();
             this.moods = this.loadMoods();
             this.currentDate = new Date();
+            
+            // Cache DOM elements for better performance
             this.habitList = document.querySelector('.habit-list');
             this.addHabitBtn = document.querySelector('.add-habit-btn');
             this.newHabitInput = document.querySelector('#newHabit');
@@ -14,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             this.moodNotes = document.querySelector('#moodNotes');
             this.saveMoodBtn = document.querySelector('.save-mood');
 
+            // Set up the tracker
             this.initializeEventListeners();
             this.renderHabits();
             this.renderCalendar();
@@ -21,6 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
             this.updateProgressBars();
         }
 
+        /**
+         * Load saved habits from localStorage or initialize with defaults
+         * @returns {Object} Habits data structure
+         */
         loadHabits() {
             const savedHabits = localStorage.getItem('habits');
             return savedHabits ? JSON.parse(savedHabits) : {
@@ -34,11 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
             };
         }
 
+        /**
+         * Load saved moods from localStorage
+         * @returns {Object} Moods data structure
+         */
         loadMoods() {
             const savedMoods = localStorage.getItem('moods');
             return savedMoods ? JSON.parse(savedMoods) : {};
         }
 
+        /**
+         * Save current moods state to localStorage
+         */
         saveMoods() {
             localStorage.setItem('moods', JSON.stringify(this.moods));
         }
@@ -84,11 +102,22 @@ document.addEventListener('DOMContentLoaded', () => {
             if (this.saveMoodBtn) {
                 this.saveMoodBtn.addEventListener('click', () => this.saveMoodSelection());
             }
+
+            // Add delegation for remove buttons
+            this.habitList.addEventListener('click', (e) => {
+                if (e.target.closest('.remove-habit-btn')) {
+                    this.removeHabit(e);
+                }
+            });
         }
 
+        /**
+         * Add a new habit to the tracker
+         */
         addNewHabit() {
             const habitName = this.newHabitInput.value.trim();
             if (habitName) {
+                // Create new habit object
                 this.habits.lastId++;
                 this.habits.habits.push({
                     id: this.habits.lastId,
@@ -102,16 +131,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
+        /**
+         * Format date to YYYY-MM-DD string
+         * @param {Date} date Date to format
+         * @returns {string} Formatted date string
+         */
         formatDate(date) {
             return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
         }
 
+        /**
+         * Handle habit completion toggle
+         * @param {HTMLElement} checkbox Checkbox element that was toggled
+         */
         toggleHabitCompletion(checkbox) {
             const habitId = parseInt(checkbox.id.replace('habit', ''));
             const today = this.formatDate(this.currentDate);
             const habit = this.habits.habits.find(h => h.id === habitId);
             
             if (habit) {
+                // Update habit completion status
                 if (checkbox.checked) {
                     habit.logs[today] = true;
                     habit.streak = this.calculateStreak(habit);
@@ -150,12 +189,44 @@ document.addEventListener('DOMContentLoaded', () => {
                 const isChecked = habit.logs[this.formatDate(this.currentDate)] ? 'checked' : '';
                 return `
                     <div class="habit-item">
-                        <input type="checkbox" id="habit${habit.id}" ${isChecked}>
-                        <label for="habit${habit.id}">${habit.name}</label>
-                        <span class="streak">${habit.streak > 0 ? '🔥 ' + habit.streak + ' days' : ''}</span>
+                        <div class="habit-main">
+                            <div class="habit-check">
+                                <input type="checkbox" id="habit${habit.id}" ${isChecked}>
+                                <label for="habit${habit.id}">${habit.name}</label>
+                            </div>
+                            <div class="habit-actions">
+                                <span class="streak">${habit.streak > 0 ? '🔥 ' + habit.streak + ' days' : ''}</span>
+                                <button class="remove-habit-btn" data-habit-id="${habit.id}">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 `;
             }).join('');
+
+            // Add event listeners for remove buttons
+            this.habitList.querySelectorAll('.remove-habit-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => this.removeHabit(e));
+            });
+        }
+
+        removeHabit(e) {
+            const habitId = parseInt(e.currentTarget.dataset.habitId);
+            
+            // Show confirmation dialog
+            if (confirm('Are you sure you want to delete this habit? This action cannot be undone.')) {
+                // Remove habit from array
+                this.habits.habits = this.habits.habits.filter(habit => habit.id !== habitId);
+                
+                // Save updated habits
+                this.saveHabits();
+                
+                // Re-render habits
+                this.renderHabits();
+                this.renderCalendar();
+                this.updateProgressBars();
+            }
         }
 
         saveMoodSelection() {

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Lifestyle - Beyond Boundaries</title>
+
+    <!-- External CSS Dependencies -->
+    <!-- Bootstrap CSS for responsive grid and components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/logoimage.jpeg" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!------------------------- Header Section - Consistent across all pages ------------------------>
+    <header>
+    <div class="container">
+        <nav>
+            <!-- Logo and Site Title -->
+            <div class="logo">
+                <a href="/index.html"><img src="../images/logoimage.jpeg" alt="logo" width="60"></a>
+                <h1>Beyond Boundaries</h1>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="home">Home</a></li>
+                <li><a href="../about.html" data-i18n="about">About</a></li>
+                <li><a href="../blog.html" data-i18n="blog">Blog</a></li>
+                <li><a href="../tracker.html" data-i18n="tracker">Tracker</a></li>
+                <li><a href="../contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <a href="../profile.html" class="profile-icon">
+                    <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+            </div>
+            <!-- Mobile Menu Hamburger Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+    <!-- Category Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Lifestyle</h1>
+            <p>Explore articles about mindful living and daily inspiration</p>
+        </div>
+    </section>
+
+    <!-- Category Posts -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-main">
+                    <!-- Page 1 Content - First 4 posts -->
+                    <div class="page-content" id="page1">
+                        <!-- Featured Lifestyle Post -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../images/morningroutine1.jpg" alt="Mindful Morning Routine">
+                                <span class="category-tag">Featured</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>Creating a Mindful Morning Routine: Your Guide to Starting Each Day with Purpose</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 1, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                </div>
+                                <p class="post-preview">Transform your mornings into a sacred ritual of self-care and intention setting. Discover proven techniques to create a morning routine that energizes your body, calms your mind, and sets a positive tone for the day ahead...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Transform your mornings into a sacred ritual of self-care and intention setting. Discover proven techniques to create a morning routine that energizes your body, calms your mind, and sets a positive tone for the day ahead.</p>
+                                    
+                                    <h3>Why Morning Routines Matter</h3>
+                                    <p>The way you start your morning sets the tone for your entire day. By creating a mindful morning routine, you're essentially designing how you want to feel and what you want to prioritize in your life.</p>
+                                    
+                                    <h3>Elements of a Mindful Morning</h3>
+                                    <ul>
+                                        <li><strong>Gentle awakening:</strong> Replace jarring alarm sounds with gentle music or natural light alarm clocks</li>
+                                        <li><strong>Hydration:</strong> Begin with a glass of water with lemon to rehydrate your body</li>
+                                        <li><strong>Movement:</strong> Incorporate gentle stretching or yoga to awaken your body</li>
+                                        <li><strong>Mindfulness:</strong> Practice 5-10 minutes of meditation to center your thoughts</li>
+                                        <li><strong>Intention setting:</strong> Write down or mentally note your intentions for the day</li>
+                                    </ul>
+                                    
+                                    <p>Remember, the goal isn't to add more to your to-do list, but to create space for what truly matters to you.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                      
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/digital-detox.jpg" alt="Digital Detox Guide">
+                                <span class="category-tag">Well-being</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>The Art of Digital Detox: Finding Peace in a Hyperconnected World</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 12, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                                <p class="post-preview">Learn practical strategies to maintain a healthy relationship with technology while staying connected to what truly matters. Discover how to create boundaries that protect your mental peace...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Learn practical strategies to maintain a healthy relationship with technology while staying connected to what truly matters. Discover how to create boundaries that protect your mental peace.</p>
+                                    
+                                    <h3>Signs You Need a Digital Detox</h3>
+                                    <ul>
+                                        <li>You check your phone first thing in the morning and last thing at night</li>
+                                        <li>You feel anxious when separated from your devices</li>
+                                        <li>Your screen time reports show hours of daily social media use</li>
+                                        <li>You have trouble focusing on tasks without checking notifications</li>
+                                    </ul>
+                                    
+                                    <h3>Simple Digital Detox Strategies</h3>
+                                    <p>Start with small, manageable changes like designating tech-free zones in your home, setting specific times to check email, or taking a social media sabbatical for a weekend. The goal is to regain control of your attention and create space for real-world connections and experiences.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Sustainable Living -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/susliving.jpg" alt="Sustainable Living Tips">
+                                <span class="category-tag">Eco-Friendly</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>Sustainable Living Made Simple: Small Changes, Lasting Impact</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 15, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                </div>
+                                <p class="post-preview">Embark on your sustainability journey with practical, budget-friendly tips that make a real difference. From zero-waste basics to ethical shopping guides...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Embark on your sustainability journey with practical, budget-friendly tips that make a real difference. From zero-waste basics to ethical shopping guides, this article provides actionable steps for more eco-conscious living.</p>
+                                    
+                                    <h3>Getting Started with Sustainable Living</h3>
+                                    <p>Sustainable living doesn't require a complete lifestyle overhaul overnight. Begin with these simple swaps:</p>
+                                    <ul>
+                                        <li>Replace single-use items with reusable alternatives (water bottles, shopping bags, coffee cups)</li>
+                                        <li>Reduce food waste through meal planning and proper storage</li>
+                                        <li>Choose products with minimal or recyclable packaging</li>
+                                        <li>Support local businesses and farmers' markets</li>
+                                    </ul>
+                                    
+                                    <h3>Beyond the Basics</h3>
+                                    <p>As you become more comfortable with sustainable practices, explore areas like ethical fashion, energy conservation, and community involvement to expand your positive impact.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Home & Organization -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/minimalliving.jpg" alt="Minimalist Living">
+                                <span class="category-tag">Home</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>Minimalist Living: Creating Space for What Matters Most</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 5, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 9 min read</span>
+                                </div>
+                                <p class="post-preview">Discover the life-changing benefits of minimalism and learn how to declutter your space and mind. A room-by-room guide to creating a peaceful, intentional home...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Discover the life-changing benefits of minimalism and learn how to declutter your space and mind. This room-by-room guide helps you create a peaceful, intentional home that supports your wellbeing.</p>
+                                    
+                                    <h3>The Philosophy of Less</h3>
+                                    <p>Minimalism isn't about deprivation—it's about making room for what truly adds value to your life. By removing excess possessions and commitments, you create space for experiences, relationships, and pursuits that bring genuine joy.</p>
+                                    
+                                    <h3>Decluttering with Purpose</h3>
+                                    <p>Start with these questions when evaluating your belongings:</p>
+                                    <ul>
+                                        <li>Does this item serve a practical purpose in my current life?</li>
+                                        <li>Does it bring me genuine joy?</li>
+                                        <li>Would I buy this again today?</li>
+                                        <li>Is this worth the space it occupies in my home?</li>
+                                    </ul>
+                                    
+                                    <p>Remember that minimalism looks different for everyone. The goal is to create a home that feels spacious, calm, and aligned with your values.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 2 Content - Next 4 posts -->
+                    <div class="page-content" id="page2" style="display: none;">
+                        <!-- Personal Growth - Slow Living -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/livingslow.jpg" alt="Slow Living Philosophy">
+                                <span class="category-tag">Growth</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>The Art of Slow Living: Finding Joy in Life's Simple Pleasures</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 11, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                                </div>
+                                <p class="post-preview">Embrace the slow living philosophy and learn to savor each moment. Discover how slowing down can lead to more fulfillment, creativity, and genuine connections...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Embrace the slow living philosophy and learn to savor each moment. Discover how slowing down can lead to more fulfillment, creativity, and genuine connections in our fast-paced world.</p>
+                                    
+                                    <h3>The Problem with Constant Hustle</h3>
+                                    <p>Our culture often glorifies busyness and productivity at the expense of rest and presence. Slow living isn't about doing everything at a snail's pace—it's about being intentional with your time and energy, and recognizing that faster isn't always better.</p>
+                                    
+                                    <h3>Principles of Slow Living</h3>
+                                    <ul>
+                                        <li>Single-tasking instead of multitasking</li>
+                                        <li>Creating margin in your schedule for rest and spontaneity</li>
+                                        <li>Engaging fully with sensory experiences (food, nature, art)</li>
+                                        <li>Choosing quality over quantity in possessions and commitments</li>
+                                        <li>Embracing natural rhythms and seasons</li>
+                                    </ul>
+                                    
+                                    <p>Remember that slow living looks different for everyone. The goal is to create a life that feels spacious, intentional, and aligned with your deepest values.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Relationships & Connection -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/digitalage.jpg" alt="Building Relationships">
+                                <span class="category-tag">Relationships</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>Cultivating Meaningful Relationships in the Digital Age</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 28, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                </div>
+                                <p class="post-preview">Navigate the complexities of modern relationships and learn to build deeper connections. Practical advice for maintaining authenticity in a digital world...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Navigate the complexities of modern relationships and learn to build deeper connections. This article offers practical advice for maintaining authenticity in a digital world.</p>
+                                    
+                                    <h3>Quality Over Quantity</h3>
+                                    <p>In an age of endless connections, focus on nurturing a smaller circle of meaningful relationships rather than accumulating hundreds of surface-level interactions. Deep connections require time, vulnerability, and consistent presence.</p>
+                                    
+                                    <h3>Digital Boundaries for Authentic Connection</h3>
+                                    <ul>
+                                        <li>Schedule regular phone calls or video chats with distant loved ones</li>
+                                        <li>Practice active listening without digital distractions</li>
+                                        <li>Create tech-free zones and times for in-person interactions</li>
+                                        <li>Be mindful of how social media affects your relationships</li>
+                                    </ul>
+                                    
+                                    <p>Remember that true connection happens in the spaces between digital interactions—in shared experiences, vulnerable conversations, and simply being present with one another.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Creativity & Expression -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/dailywriting.jpg" alt="Morning Pages Practice">
+                                <span class="category-tag">Creativity</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>Morning Pages: Unlocking Your Creative Potential Through Daily Writing</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 29, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                                <p class="post-preview">Explore the transformative practice of morning pages and how this simple ritual can unlock creativity, clarity, and personal growth...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Explore the transformative practice of morning pages and how this simple ritual can unlock creativity, clarity, and personal growth.</p>
+                                    
+                                    <h3>What Are Morning Pages?</h3>
+                                    <p>Morning pages are three pages of longhand, stream-of-consciousness writing done first thing in the morning. There are no rules about content or quality—the only requirement is that you keep your hand moving across the page.</p>
+                                    
+                                    <h3>Benefits of Daily Writing Practice</h3>
+                                    <ul>
+                                        <li>Clears mental clutter and reduces anxiety</li>
+                                        <li>Bypasses your inner critic to access authentic thoughts</li>
+                                        <li>Helps identify patterns and insights about yourself</li>
+                                        <li>Creates space for creative ideas to emerge</li>
+                                        <li>Builds confidence in your voice and perspective</li>
+                                    </ul>
+                                    
+                                    <h3>Getting Started</h3>
+                                    <p>All you need is a notebook, a pen, and 20-30 minutes in the morning before your day begins. Don't worry about writing well—focus on writing honestly. The magic happens in the process, not the product.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Seasonal Living -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/seasonalliving.jpg" alt="Seasonal Living">
+                                <span class="category-tag">Seasonal</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>Living in Rhythm with the Seasons: A Guide to Seasonal Alignment</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 20, 2023</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                </div>
+                                <p class="post-preview">Discover how aligning your lifestyle with nature's rhythms can enhance your wellbeing and bring more joy to everyday life...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Discover how aligning your lifestyle with nature's rhythms can enhance your wellbeing and bring more joy to everyday life.</p>
+                                    
+                                    <h3>The Wisdom of Seasonal Living</h3>
+                                    <p>In our climate-controlled modern world, we've lost touch with the natural ebbs and flows of the seasons. Reconnecting with these cycles can help us live more sustainably and in greater harmony with our own natural rhythms.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Mindful Technology -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/mindfultechonology.jpg" alt="Mindful Technology Use">
+                                <span class="category-tag">Tech</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>Mindful Technology: Creating a Healthy Digital Life</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 15, 2023</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                                <p class="post-preview">Learn how to use technology intentionally to enhance rather than detract from your quality of life...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Learn how to use technology intentionally to enhance rather than detract from your quality of life.</p>
+                                    
+                                    <h3>Finding Balance in the Digital Age</h3>
+                                    <p>Technology itself isn't the problem—it's how we use it. This article explores practical strategies for maintaining a healthy relationship with our devices.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 3 Content - Last 4 posts -->
+                    <div class="page-content" id="page3" style="display: none;">
+                        <!-- Mindful Eating -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/eatingmindfulllyyy.jpg" alt="Mindful Eating">
+                                <span class="category-tag">Food</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>The Practice of Mindful Eating: Nourishing Body and Soul</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 10, 2023</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                </div>
+                                <p class="post-preview">Transform your relationship with food through the practice of mindful eating...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Transform your relationship with food through the practice of mindful eating.</p>
+                                    
+                                    <h3>Beyond Diets and Restrictions</h3>
+                                    <p>Mindful eating isn't about rules or restrictions—it's about presence, enjoyment, and listening to your body's wisdom.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Capsule Wardrobe -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/wardrobe.jpg" alt="Capsule Wardrobe">
+                                <span class="category-tag">Fashion</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>Building a Sustainable Capsule Wardrobe: Less Stuff, More Style</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 5, 2023</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                </div>
+                                <p class="post-preview">Simplify your closet and your morning routine with a thoughtfully curated capsule wardrobe...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Simplify your closet and your morning routine with a thoughtfully curated capsule wardrobe.</p>
+                                    
+                                    <h3>Quality Over Quantity</h3>
+                                    <p>A capsule wardrobe focuses on versatile, high-quality pieces that mix and match effortlessly, reducing decision fatigue and environmental impact.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Digital Minimalism -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/digiminimalism.jpg" alt="Digital Minimalism">
+                                <span class="category-tag">Digital</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>Digital Minimalism: Decluttering Your Virtual Life</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> February 28, 2023</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                                <p class="post-preview">Apply minimalist principles to your digital life for greater focus and peace of mind...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Apply minimalist principles to your digital life for greater focus and peace of mind.</p>
+                                    
+                                    <h3>Digital Decluttering</h3>
+                                    <p>From email inbox zero to thoughtful social media curation, this guide will help you create a more intentional digital environment.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Hygge Living -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/cozy.jpg" alt="Hygge Living">
+                                <span class="category-tag">Cozy</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Lifestyle</span>
+                                <h2>Embracing Hygge: The Danish Art of Coziness and Contentment</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> February 20, 2023</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                                </div>
+                                <p class="post-preview">Learn how to incorporate the Danish concept of hygge into your home and daily routines...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Learn how to incorporate the Danish concept of hygge into your home and daily routines.</p>
+                                    
+                                    <h3>Creating Cozy Moments</h3>
+                                    <p>Hygge is about creating moments of comfort, connection, and contentment in everyday life—from candlelit dinners to cozy reading nooks.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="active" onclick="showPage(1); return false;">1</a>
+                        <a href="#" onclick="showPage(2); return false;">2</a>
+                        <a href="#" onclick="showPage(3); return false;">3</a>
+                        <a href="#" class="next" onclick="showNextPage(); return false;">Next <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="lifestyle.html">Lifestyle <span>(12)</span></a></li>
+                            <li><a href="wellness.html">Wellness <span>(9)</span></a></li>
+                            <li><a href="home.html">Home & Living <span>(5)</span></a></li>
+                            <li><a href="creativity.html">Creativity <span>(4)</span></a></li>
+                            <li><a href="mindfulness.html">Mindfulness <span>(10)</span></a></li>
+                            <li><a href="personal-growth.html">Personal Growth <span>(7)</span></a></li>
+                        </ul>
+                    </div>
+            <!-------------------------------POPULAR POSTS---------------------------->
+                    <div class="sidebar-widget popular-posts-widget">
+                        <div class="widget-title">
+                            <h3>Popular Posts</h3>
+                        </div>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/morningroutine1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="lifestyle.html">Creating a Mindful Morning Routine</a></h4>
+                                    <span>March 1, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/selfcare1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="wellness.html">Simple Self-Care Practices for Busy Days</a></h4>
+                                    <span>March 18, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/livingSpace1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="home.html">Creating a Cozy and Inviting Space</a></h4>
+                                    <span>March 20, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Newsletter Subscription Section -->
+     <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join the Community</h2>
+                <p>Sign up for our newsletter to receive updates, exclusive content, and more.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+ <!---------------------------- Footer Section - Consistent across all pages ------------------------------->
+ <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h2>Beyond Boundaries</h2>
+                </div>
+                <p>Empowering individuals to live mindfully, embrace creativity, and find joy in everyday moments. Join our community of like-minded souls on a journey of self-discovery.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/beyondboundaries_blog" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/beyond_bounds" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../tracker.html">Tracker</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="wellness.html">Wellness</a></li>
+                        <li><a href="lifestyle.html">Lifestyle</a></li>
+                        <li><a href="creativity.html">Creativity</a></li>
+                        <li><a href="personal-growth.html">Personal Growth</a></li>
+                        <li><a href="home.html">Home & Living</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@beyondboundaries.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Mindful Street, Wellness City, WC 12345</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2025 Beyond Boundaries. All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- JavaScript Dependencies -->
+    <script src="../js/common.js"></script>
+    <script src="../js/blog.js"></script>
+    <!-- Add JavaScript for expanding content -->
+    <script>
+        function toggleContent(button) {
+            // Find the closest blog-post parent
+            const blogPost = button.closest('.blog-post');
+            
+            // Find the preview and full content within this blog post
+            const preview = blogPost.querySelector('.post-preview');
+            const fullContent = blogPost.querySelector('.full-content');
+            
+            // Toggle visibility
+            if (fullContent.style.display === 'none') {
+                preview.style.display = 'none';
+                fullContent.style.display = 'block';
+                button.textContent = 'Show Less';
+            } else {
+                preview.style.display = 'block';
+                fullContent.style.display = 'none';
+                button.textContent = 'Continue Reading';
+            }
+            
+            // Scroll to the top of this blog post
+            blogPost.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showPage(pageNumber) {
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach((page, index) => {
+                if (index + 1 === pageNumber) {
+                    page.style.display = 'block';
+                } else {
+                    page.style.display = 'none';
+                }
+            });
+            updatePagination(pageNumber);
+        }
+
+        function showNextPage() {
+            const currentPage = document.querySelector('.pagination .active').textContent;
+            const nextPage = parseInt(currentPage) + 1;
+            if (nextPage <= 3) {
+                showPage(nextPage);
+            }
+        }
+    </script>
+</body>
+</html>
+
+

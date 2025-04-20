@@ -1,21 +1,29 @@
-/* Home Page Specific Styles */
+/**
+ * Home Page Specific Styles
+ * Contains styles exclusively for the home page components
+ */
+
+/* Hero Section Styles */
 .hero {
     height: 80vh;
     position: relative;
 }
 
+/* Carousel Configuration */
 .carousel,
 .carousel-inner,
 .carousel-item {
     height: 100%;
 }
 
+/* Carousel Image Styling */
 .carousel-item img {
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
 
+/* Overlay for carousel images */
 .carousel-item::before {
     content: '';
     position: absolute;
@@ -27,15 +35,15 @@
     z-index: 1;
 }
 
+/* Featured Section Styles */
 .featured {
     padding: 80px 0;
     background-color: var(--primary-color);
 }
 
+/* Featured Grid Layout */
 .featured-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-
-/* Add other home-specific styles */

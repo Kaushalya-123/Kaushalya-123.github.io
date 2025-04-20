@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home & Living - Beyond Boundaries</title>
+    
+    <!-- CSS Dependencies -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/categories.css">
+    <link rel="shortcut icon" href="../images/logoimage.jpeg" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!------------------------- Header Section - Consistent across all pages ------------------------>
+    <header>
+    <div class="container">
+        <nav>
+            <!-- Logo and Site Title -->
+            <div class="logo">
+                <a href="/index.html"><img src="../images/logoimage.jpeg" alt="logo" width="60"></a>
+                <h1>Beyond Boundaries</h1>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="home">Home</a></li>
+                <li><a href="../about.html" data-i18n="about">About</a></li>
+                <li><a href="../blog.html" data-i18n="blog">Blog</a></li>
+                <li><a href="../tracker.html" data-i18n="tracker">Tracker</a></li>
+                <li><a href="../contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <a href="../profile.html" class="profile-icon">
+                    <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+            </div>
+            <!-- Mobile Menu Hamburger Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Home & Living</h1>
+            <p>Create a space that nurtures your soul and inspires your daily life</p>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-main">
+                    <!-- Page 1 Content - First 4 posts -->
+                    <div class="page-content" id="page1">
+                        <!-- First Post -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/moindfullivingspace.jpg" alt="Mindful Living Space">
+                                <span class="category-tag">Featured</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Home</span>
+                                <h2>Creating a Mindful Living Space</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 17, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                </div>
+                                <p class="post-preview">Transform your living space into a sanctuary of peace and productivity...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Transform your living space into a sanctuary of peace and productivity with these mindful design principles.</p>
+                                    
+                                    <h3>The Power of Intentional Design</h3>
+                                    <p>Your home environment directly impacts your mental wellbeing. By creating spaces that support your values and daily rituals, you can reduce stress and enhance your quality of life.</p>
+                                    
+                                    <h3>Key Elements of a Mindful Home</h3>
+                                    <ul>
+                                        <li>Natural light and air flow</li>
+                                        <li>Thoughtful organization systems</li>
+                                        <li>Connection to nature through plants and natural materials</li>
+                                        <li>Designated spaces for rest, work, and creativity</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Second Post -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/homedecor.jpg" alt="Sustainable Home Decor">
+                                <span class="category-tag">Eco-Friendly</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Home</span>
+                                <h2>Sustainable Home Decor: Beauty with a Conscience</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 25, 2023</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                                <p class="post-preview">Discover how to decorate your home beautifully while minimizing environmental impact...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Discover how to decorate your home beautifully while minimizing environmental impact through thoughtful choices.</p>
+                                    
+                                    <h3>Beyond Aesthetics</h3>
+                                    <p>Sustainable decor considers the entire lifecycle of each item—from materials and production to longevity and eventual disposal.</p>
+                                    
+                                    <h3>Sustainable Decor Principles</h3>
+                                    <ul>
+                                        <li>Choose natural, renewable, or recycled materials</li>
+                                        <li>Invest in quality pieces that will last for years</li>
+                                        <li>Support local artisans and ethical companies</li>
+                                        <li>Embrace vintage and secondhand treasures</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Third Post -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/tinyhomes.jpg" alt="Small Space Living">
+                                <span class="category-tag">Organization</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Home</span>
+                                <h2>Small Space Living: Maximizing Comfort in Minimal Square Footage</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 4, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                </div>
+                                <p class="post-preview">Creative solutions for making the most of apartments, tiny homes, and compact living spaces...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Creative solutions for making the most of apartments, tiny homes, and compact living spaces without sacrificing style or comfort.</p>
+                                    
+                                    <h3>The Art of Multifunctionality</h3>
+                                    <p>In small spaces, every item should earn its keep. Look for furniture that serves multiple purposes, like storage ottomans, murphy beds, or expandable dining tables.</p>
+                                    
+                                    <h3>Visual Spaciousness</h3>
+                                    <p>Create the illusion of more space with these designer tricks:</p>
+                                    <ul>
+                                        <li>Use light colors and strategic mirrors</li>
+                                        <li>Keep sightlines clear with furniture that sits off the floor</li>
+                                        <li>Embrace vertical storage to draw the eye upward</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Fourth Post -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/refreshinghomes.jpg" alt="Seasonal Home Updates">
+                                <span class="category-tag">Seasonal</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Home</span>
+                                <h2>Seasonal Home Updates: Refreshing Your Space Throughout the Year</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 30, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                                </div>
+                                <p class="post-preview">Simple ways to adapt your home to each season for comfort, beauty, and connection to nature's rhythms...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Simple ways to adapt your home to each season for comfort, beauty, and connection to nature's rhythms without major renovations.</p>
+                                    
+                                    <h3>Living in Harmony with Seasons</h3>
+                                    <p>Seasonal updates help your home remain in tune with the natural world, creating spaces that support your changing needs throughout the year.</p>
+                                    
+                                    <h3>Seasonal Transition Tips</h3>
+                                    <ul>
+                                        <li>Rotate textiles like throw pillows, blankets, and curtains</li>
+                                        <li>Bring in seasonal botanicals and natural elements</li>
+                                        <li>Adjust lighting to complement changing daylight hours</li>
+                                        <li>Create seasonal rituals and traditions in your space</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 2 Content - Next 4 posts -->
+                    <div class="page-content" id="page2" style="display: none;">
+                        <!-- Fifth Post -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/kitchentools.jpg" alt="Kitchen Essentials">
+                                <span class="category-tag">Kitchen</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Home</span>
+                                <h2>Mindful Kitchen Essentials: Quality Tools for Joyful Cooking</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 15, 2023</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                </div>
+                                <p class="post-preview">Curating a thoughtful collection of kitchen tools that will last a lifetime and make cooking a pleasure...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Curating a thoughtful collection of kitchen tools that will last a lifetime and make cooking a pleasure rather than a chore.</p>
+                                    
+                                    <h3>Quality Over Quantity</h3>
+                                    <p>A well-equipped kitchen doesn't need dozens of gadgets—just a carefully selected set of versatile, high-quality tools that perform multiple functions.</p>
+                                    
+                                    <h3>The Mindful Kitchen Checklist</h3>
+                                    <ul>
+                                        <li>A few excellent knives rather than a large set</li>
+                                        <li>Cast iron and stainless steel cookware that improves with age</li>
+                                        <li>Wooden and natural fiber tools that are beautiful and functional</li>
+                                        <li>Multipurpose appliances that earn their counter space</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="active" onclick="showPage(1); return false;">1</a>
+                        <a href="#" onclick="showPage(2); return false;">2</a>
+                        <a href="#" class="next" onclick="showNextPage(); return false;">Next <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="lifestyle.html">Lifestyle <span>(12)</span></a></li>
+                            <li><a href="wellness.html">Wellness <span>(9)</span></a></li>
+                            <li><a href="home.html">Home & Living <span>(5)</span></a></li>
+                            <li><a href="creativity.html">Creativity <span>(4)</span></a></li>
+                            <li><a href="mindfulness.html">Mindfulness <span>(10)</span></a></li>
+                            <li><a href="personal-growth.html">Personal Growth <span>(7)</span></a></li>
+                        </ul>
+                    </div>
+  <!-------------------------------POPULAR POSTS---------------------------->
+                    <div class="sidebar-widget popular-posts-widget">
+                        <div class="widget-title">
+                            <h3>Popular Posts</h3>
+                        </div>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/morningroutine1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="lifestyle.html">Creating a Mindful Morning Routine</a></h4>
+                                    <span>March 1, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/selfcare1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="wellness.html">Simple Self-Care Practices for Busy Days</a></h4>
+                                    <span>March 18, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/livingSpace1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="home.html">Creating a Cozy and Inviting Space</a></h4>
+                                    <span>March 20, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join the Community</h2>
+                <p>Sign up for our newsletter to receive updates, exclusive content, and more.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+  <!---------------------------- Footer Section - Consistent across all pages ------------------------------->
+ <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h2>Beyond Boundaries</h2>
+                </div>
+                <p>Empowering individuals to live mindfully, embrace creativity, and find joy in everyday moments. Join our community of like-minded souls on a journey of self-discovery.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/beyondboundaries_blog" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/beyond_bounds" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../tracker.html">Tracker</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="wellness.html">Wellness</a></li>
+                        <li><a href="lifestyle.html">Lifestyle</a></li>
+                        <li><a href="creativity.html">Creativity</a></li>
+                        <li><a href="personal-growth.html">Personal Growth</a></li>
+                        <li><a href="home.html">Home & Living</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@beyondboundaries.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Mindful Street, Wellness City, WC 12345</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2025 Beyond Boundaries. All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- JavaScript Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function toggleContent(button) {
+            // Find the closest blog-post parent
+            const blogPost = button.closest('.blog-post');
+            
+            // Find the preview and full content within this blog post
+            const preview = blogPost.querySelector('.post-preview');
+            const fullContent = blogPost.querySelector('.full-content');
+            
+            // Toggle visibility
+            if (fullContent.style.display === 'none') {
+                preview.style.display = 'none';
+                fullContent.style.display = 'block';
+                button.textContent = 'Show Less';
+            } else {
+                preview.style.display = 'block';
+                fullContent.style.display = 'none';
+                button.textContent = 'Continue Reading';
+            }
+            
+            // Scroll to the top of this blog post
+            blogPost.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showPage(pageNumber) {
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach((page, index) => {
+                if (index + 1 === pageNumber) {
+                    page.style.display = 'block';
+                } else {
+                    page.style.display = 'none';
+                }
+            });
+            updatePagination(pageNumber);
+        }
+
+        function showNextPage() {
+            const currentPage = document.querySelector('.pagination .active').textContent;
+            const nextPage = parseInt(currentPage) + 1;
+            if (nextPage <= 2) {
+                showPage(nextPage);
+            }
+        }
+
+        function updatePagination(currentPage) {
+            const paginationLinks = document.querySelectorAll('.pagination a');
+            paginationLinks.forEach((link, index) => {
+                if (index + 1 === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

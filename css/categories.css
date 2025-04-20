@@ -1,0 +1,88 @@
+/* Category-specific styles */
+.category-header {
+    padding: 80px 0;
+    text-align: center;
+    color: var(--Black);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.category-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#f8f3ef;
+}
+
+.category-header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.category-header p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Category-specific colors and backgrounds */
+.lifestyle-header {
+    background-image: url('../images/instagram3.jpg');
+}
+
+.mindfulness-header {
+    background-image: url('../images/mindfulness-bg.jpg');
+}
+
+.creativity-header {
+    background-image: url('../images/creativity-bg.jpg');
+}
+
+.personal-growth-header {
+    background-image: url('../images/personal-growth-bg.jpg');
+}
+
+.wellness-header {
+    background-image: url('../images/wellness-bg.jpg');
+}
+
+/* Category accent colors */
+.lifestyle-accent { color: #e8a87c; }
+.mindfulness-accent { color: #84b59f; }
+.creativity-accent { color: #ff6b6b; }
+.personal-growth-accent { color: #6c5ce7; }
+.wellness-accent { color: #e8a87c }
+
+/* Category tag styles */
+.category-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Blog grid layout */
+.blog-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}

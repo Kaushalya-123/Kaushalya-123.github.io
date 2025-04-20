@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfulness - Beyond Boundaries</title>
+    
+    <!-- CSS Dependencies -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/categories.css">
+    <link rel="shortcut icon" href="../images/logoimage.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!------------------------- Header Section - Consistent across all pages ------------------------>
+   <header>
+    <div class="container">
+        <nav>
+            <!-- Logo and Site Title -->
+            <div class="logo">
+                <a href="/index.html"><img src="../images/logoimage.jpeg" alt="logo" width="60"></a>
+                <h1>Beyond Boundaries</h1>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="home">Home</a></li>
+                <li><a href="../about.html" data-i18n="about">About</a></li>
+                <li><a href="../blog.html" data-i18n="blog">Blog</a></li>
+                <li><a href="../tracker.html" data-i18n="tracker">Tracker</a></li>
+                <li><a href="../contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <a href="../profile.html" class="profile-icon">
+                    <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+            </div>
+            <!-- Mobile Menu Hamburger Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Mindfulness</h1>
+            <p>Practice presence and cultivate inner peace in daily life</p>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-main">
+                    <!-- Page 1 Content -->
+                    <div class="page-content" id="page1">
+                        <!-- First 5 posts on page 1 -->
+                        <!-- First Post -->
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="../category posts images/meditation.jpg"  alt="Meditation for Beginners">
+                                <span class="category-tag">Featured</span>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 25, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                </div>
+                                <h2>Simple Meditation Practices for Beginners</h2>
+                                <p class="post-excerpt">Start your meditation journey with these beginner-friendly mindfulness practices...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Starting a meditation practice doesn't have to be complicated. Here are some simple techniques to begin your journey.</p>
+                                    <h3>Getting Started with Meditation:</h3>
+                                    <ul>
+                                        <li>Finding a quiet space</li>
+                                        <li>Basic breathing techniques</li>
+                                        <li>Body scan meditation</li>
+                                        <li>Setting realistic practice goals</li>
+                                    </ul>
+                                    <p>Remember, consistency is more important than duration when starting your practice.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </article>
+
+                        <!-- Second Post -->
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="../category posts images/mindfulwalking.jpg" alt="Mindful Walking">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 3, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                                <h2>The Art of Mindful Walking: Moving Meditation</h2>
+                                <p class="post-excerpt">Discover how to transform an ordinary walk into a powerful mindfulness practice...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Walking meditation is a wonderful way to incorporate mindfulness into your daily routine while staying active.</p>
+                                    <h3>Key Elements of Mindful Walking:</h3>
+                                    <ul>
+                                        <li>Focusing on each step</li>
+                                        <li>Observing your surroundings</li>
+                                        <li>Coordinating breath with movement</li>
+                                        <li>Practicing outdoor awareness</li>
+                                    </ul>
+                                    <p>Turn your daily walk into a meditation practice with these simple techniques.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </article>
+
+                        <!-- Third Post -->
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="../category posts images/eatingmindfully.jpg" alt="Mindful Eating">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 20, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                                </div>
+                                <h2>Mindful Eating: Transforming Your Relationship with Food</h2>
+                                <p class="post-excerpt">Discover how mindful eating can help you develop a healthier relationship with food and improve your overall well-being...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Mindful eating is about being present and fully engaged with your food during meals. It's not just about what you eat, but how you eat.</p>
+                                    <h3>Key Principles of Mindful Eating:</h3>
+                                    <ul>
+                                        <li>Eating slowly and without distraction</li>
+                                        <li>Listening to physical hunger cues</li>
+                                        <li>Engaging all senses while eating</li>
+                                        <li>Learning to cope with guilt and anxiety about food</li>
+                                    </ul>
+                                    <p>Practice these techniques daily to develop a more conscious and enjoyable eating experience.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </article>
+
+                        <!-- Fourth Post -->
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="../category posts images/workplace.jpg" alt="Mindful Work">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 18, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                </div>
+                                <h2>Bringing Mindfulness to Your Workplace</h2>
+                                <p class="post-excerpt">Learn how to incorporate mindfulness practices into your work routine for better focus and reduced stress...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>The modern workplace can be stressful and overwhelming. Mindfulness can help you stay centered and productive.</p>
+                                    <h3>Workplace Mindfulness Techniques:</h3>
+                                    <ul>
+                                        <li>Taking mindful breaks between tasks</li>
+                                        <li>Practicing desk-based meditation</li>
+                                        <li>Mindful communication with colleagues</li>
+                                        <li>Creating a mindful workspace</li>
+                                    </ul>
+                                    <p>These practices can transform your work experience and boost productivity.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </article>
+
+                        <!-- Fifth Post -->
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="../category posts images/relationships.jpg" alt="Mindful Relationships">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 3, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                                <h2>Mindful Relationships: Deepening Your Connections</h2>
+                                <p class="post-excerpt">Explore how mindfulness can enhance your relationships and create deeper connections with others...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Mindfulness in relationships means being fully present with others and practicing compassionate awareness.</p>
+                                    <h3>Building Mindful Relationships:</h3>
+                                    <ul>
+                                        <li>Active listening practices</li>
+                                        <li>Cultivating empathy</li>
+                                        <li>Mindful communication techniques</li>
+                                        <li>Managing relationship challenges mindfully</li>
+                                    </ul>
+                                    <p>These skills can transform your relationships and create lasting bonds.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Page 2 Content -->
+                    <div class="page-content" id="page2" style="display: none;">
+                        <!-- Next 5 posts on page 2 -->
+                        <!-- Sixth Post -->
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="../category posts images/mindfulnature.jpg" alt="Nature Mindfulness">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 22, 2023</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                </div>
+                                <h2>Nature-Based Mindfulness Practices</h2>
+                                <p class="post-excerpt">Connect with nature through mindful practices that ground and center you...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Nature provides the perfect setting for mindfulness practice, helping us connect with the present moment.</p>
+                                    <h3>Nature Mindfulness Exercises:</h3>
+                                    <ul>
+                                        <li>Forest bathing techniques</li>
+                                        <li>Mindful gardening practices</li>
+                                        <li>Nature observation exercises</li>
+                                        <li>Outdoor meditation guides</li>
+                                    </ul>
+                                    <p>Let nature be your guide to deeper mindfulness practice.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </article>
+
+                        <!-- Seventh Post -->
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="../category posts images/creativeness.jpg" alt="Creative Mindfulness">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 15, 2023</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                                </div>
+                                <h2>Mindful Creativity: Unlocking Your Creative Potential</h2>
+                                <p class="post-excerpt">Learn how mindfulness can enhance your creative process and artistic expression...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Mindfulness and creativity go hand in hand, helping us access our innate creative potential.</p>
+                                    <h3>Creative Mindfulness Practices:</h3>
+                                    <ul>
+                                        <li>Mindful drawing exercises</li>
+                                        <li>Creative writing meditation</li>
+                                        <li>Movement and dance awareness</li>
+                                        <li>Sound and music meditation</li>
+                                    </ul>
+                                    <p>Discover how mindfulness can unlock your creative flow.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </article>
+
+                        <!-- Eighth Post -->
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="../category posts images/mindful sleeping.jpg" alt="Mindful Sleep">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 8, 2023</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                                <h2>Mindful Sleep: Improving Your Rest Quality</h2>
+                                <p class="post-excerpt">Discover mindfulness techniques for better sleep and more restful nights...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Quality sleep is essential for well-being, and mindfulness can help improve your sleep patterns.</p>
+                                    <h3>Mindful Sleep Practices:</h3>
+                                    <ul>
+                                        <li>Bedtime meditation routines</li>
+                                        <li>Relaxation techniques</li>
+                                        <li>Mindful evening rituals</li>
+                                        <li>Managing sleep anxiety</li>
+                                    </ul>
+                                    <p>Transform your nights with these mindful sleep practices.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </article>
+
+                        <!-- Ninth Post -->
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="../category posts images/stress.jpg" alt="Stress Management">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 1, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                </div>
+                                <h2>Mindful Stress Management Techniques</h2>
+                                <p class="post-excerpt">Learn effective mindfulness-based strategies for managing stress and anxiety...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Mindfulness offers powerful tools for managing stress and building resilience in challenging times.</p>
+                                    <h3>Stress Management Practices:</h3>
+                                    <ul>
+                                        <li>Quick stress-relief techniques</li>
+                                        <li>Mindful breathing exercises</li>
+                                        <li>Body scan meditation</li>
+                                        <li>Emotional awareness practices</li>
+                                    </ul>
+                                    <p>Build your stress management toolkit with these mindful approaches.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </article>
+
+                        <!-- Tenth Post -->
+                        <article class="blog-post">
+                            <div class="post-image">
+                                <img src="../category posts images/routine.jpg" alt="Morning Mindfulness">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 2, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                                </div>
+                                <h2>Creating a Mindful Morning Routine</h2>
+                                <p class="post-excerpt">Start your day with intention through these mindful morning practices...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>How you start your morning sets the tone for your entire day. Create a mindful morning routine that nurtures your well-being.</p>
+                                    <h3>Morning Mindfulness Elements:</h3>
+                                    <ul>
+                                        <li>Early morning meditation</li>
+                                        <li>Mindful movement practices</li>
+                                        <li>Intentional breakfast rituals</li>
+                                        <li>Setting daily intentions</li>
+                                    </ul>
+                                    <p>Transform your mornings into a mindful celebration of new beginnings.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="active" onclick="showPage(1); return false;">1</a>
+                        <a href="#" onclick="showPage(2); return false;">2</a>
+                        <a href="#" class="next" onclick="showNextPage(); return false;">Next <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Sidebar -->
+                <div class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="lifestyle.html">Lifestyle <span>(12)</span></a></li>
+                            <li><a href="wellness.html">Wellness <span>(9)</span></a></li>
+                            <li><a href="home.html">Home & Living <span>(5)</span></a></li>
+                            <li><a href="creativity.html">Creativity <span>(4)</span></a></li>
+                            <li><a href="mindfulness.html">Mindfulness <span>(10)</span></a></li>
+                            <li><a href="personal-growth.html">Personal Growth <span>(7)</span></a></li>
+                        </ul>
+                    </div>
+            <!-------------------------------POPULAR POSTS---------------------------->
+                    <div class="sidebar-widget popular-posts-widget">
+                        <div class="widget-title">
+                            <h3>Popular Posts</h3>
+                        </div>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/morningroutine1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="lifestyle.html">Creating a Mindful Morning Routine</a></h4>
+                                    <span>March 1, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/selfcare1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="wellness.html">Simple Self-Care Practices for Busy Days</a></h4>
+                                    <span>March 18, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/livingSpace1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="home.html">Creating a Cozy and Inviting Space</a></h4>
+                                    <span>March 20, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join the Community</h2>
+                <p>Sign up for our newsletter to receive updates, exclusive content, and more.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+ <!---------------------------- Footer Section - Consistent across all pages ------------------------------->
+ <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h2>Beyond Boundaries</h2>
+                </div>
+                <p>Empowering individuals to live mindfully, embrace creativity, and find joy in everyday moments. Join our community of like-minded souls on a journey of self-discovery.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/beyondboundaries_blog" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/beyond_bounds" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../tracker.html">Tracker</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="wellness.html">Wellness</a></li>
+                        <li><a href="lifestyle.html">Lifestyle</a></li>
+                        <li><a href="creativity.html">Creativity</a></li>
+                        <li><a href="personal-growth.html">Personal Growth</a></li>
+                        <li><a href="home.html">Home & Living</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@beyondboundaries.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Mindful Street, Wellness City, WC 12345</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2025 Beyond Boundaries. All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function toggleContent(button) {
+            const blogPost = button.closest('.blog-post');
+            const preview = blogPost.querySelector('.post-excerpt');
+            const fullContent = blogPost.querySelector('.full-content');
+            
+            if (fullContent.style.display === 'none') {
+                preview.style.display = 'none';
+                fullContent.style.display = 'block';
+                button.textContent = 'Show Less';
+            } else {
+                preview.style.display = 'block';
+                fullContent.style.display = 'none';
+                button.textContent = 'Continue Reading';
+            }
+            
+            blogPost.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Update pagination to handle more pages
+        function showPage(pageNumber) {
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach((page, index) => {
+                if (index + 1 === pageNumber) {
+                    page.style.display = 'block';
+                } else {
+                    page.style.display = 'none';
+                }
+            });
+            updatePagination(pageNumber);
+        }
+
+        function showNextPage() {
+            const currentPage = document.querySelector('.pagination .active').textContent;
+            const nextPage = parseInt(currentPage) + 1;
+            if (nextPage <= 3) { // Updated to handle 3 pages (10 posts)
+                showPage(nextPage);
+            }
+        }
+
+        function updatePagination(activePage) {
+            const paginationLinks = document.querySelectorAll('.pagination a');
+            paginationLinks.forEach(link => {
+                if (link.textContent.trim() === activePage.toString()) {
+                    link.classList.add('active');
+                } else if (!link.classList.contains('next')) {
+                    link.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

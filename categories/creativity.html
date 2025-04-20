@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creativity - Beyond Boundaries</title>
+    
+    <!-- External CSS Dependencies -->
+    <!-- Bootstrap CSS for responsive grid and components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/categories.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/logoimage.jpeg" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!------------------------- Header Section - Consistent across all pages ------------------------>
+    <header>
+    <div class="container">
+        <nav>
+            <!-- Logo and Site Title -->
+            <div class="logo">
+                <a href="/index.html"><img src="../images/logoimage.jpeg" alt="logo" width="60"></a>
+                <h1>Beyond Boundaries</h1>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="home">Home</a></li>
+                <li><a href="../about.html" data-i18n="about">About</a></li>
+                <li><a href="../blog.html" data-i18n="blog">Blog</a></li>
+                <li><a href="../tracker.html" data-i18n="tracker">Tracker</a></li>
+                <li><a href="../contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <a href="../profile.html" class="profile-icon">
+                    <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+            </div>
+            <!-- Mobile Menu Hamburger Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Creativity</h1>
+            <p>Unlock your creative potential and express yourself authentically</p>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-main">
+                    <!-- All content on a single page - 6 posts total -->
+                    <div class="page-content">
+                        <!-- First Post -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/creativeflow.jpg" alt="Creative Flow">
+                                <span class="category-tag">Process</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Creativity</span>
+                                <h2>Finding Your Creative Flow State</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 23, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                                <p class="post-preview">Techniques for entering the elusive flow state where creativity comes naturally...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>The flow state—that magical zone where time disappears and creativity flows effortlessly—isn't just luck. Learn how to cultivate conditions that make flow more likely.</p>
+                                    
+                                    <h3>Setting the Stage for Flow</h3>
+                                    <p>Flow requires the right balance of challenge and skill, clear goals, and immediate feedback. Create an environment that minimizes distractions and maximizes focus.</p>
+                                    
+                                    <h3>Flow Triggers</h3>
+                                    <ul>
+                                        <li>Deep focus through time-blocking techniques</li>
+                                        <li>Ritual and routine to signal your brain it's creative time</li>
+                                        <li>Physical environment optimization</li>
+                                        <li>The right level of challenge—not too easy, not too hard</li>
+                                    </ul>
+                                    
+                                    <p>With practice, you can learn to enter flow states more reliably, turning creative work from struggle to joy.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Second Post -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/creativeblocks.jpg" alt="Creative Block">
+                                <span class="category-tag">Challenges</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Creativity</span>
+                                <h2>Overcoming Creative Blocks</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 9, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                </div>
+                                <p class="post-preview">Strategies for pushing through when inspiration runs dry and ideas won't come...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Creative blocks happen to everyone, but they don't have to derail your projects. These evidence-based strategies can help you move past blocks and back into creative flow.</p>
+                                    
+                                    <h3>Understanding Creative Blocks</h3>
+                                    <p>Creative blocks often stem from perfectionism, fear of failure, burnout, or simply running out of mental resources. Identifying the cause is the first step to overcoming it.</p>
+                                    
+                                    <h3>Block-Busting Techniques</h3>
+                                    <ul>
+                                        <li>Freewriting or sketching without judgment</li>
+                                        <li>Changing your environment or medium</li>
+                                        <li>Deliberate constraints to spark new thinking</li>
+                                        <li>Physical movement to stimulate brain activity</li>
+                                    </ul>
+                                    
+                                    <p>Remember that blocks are temporary. With the right approach, you can transform them from frustrating obstacles into opportunities for growth.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Third Post -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/dailyinspiration.jpg" alt="Everyday Creativity">
+                                <span class="category-tag">Lifestyle</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Creativity</span>
+                                <h2>Finding Inspiration in Everyday Moments</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 12, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                                </div>
+                                <p class="post-preview">How to cultivate a creative mindset that finds inspiration in ordinary experiences...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Creativity isn't just for special occasions or dedicated studio time. Learn to see the world through a creative lens and find inspiration in your daily routines.</p>
+                                    
+                                    <h3>The Observant Mind</h3>
+                                    <p>Creative people are often simply more observant, noticing details, patterns, and connections that others miss. Training your attention is a fundamental creative skill.</p>
+                                    
+                                    <h3>Everyday Inspiration Practices</h3>
+                                    <ul>
+                                        <li>Morning pages or daily sketching rituals</li>
+                                        <li>Curiosity walks where you deliberately notice new things</li>
+                                        <li>Collecting interesting objects, quotes, or images</li>
+                                        <li>Changing routines to experience familiar places in new ways</li>
+                                    </ul>
+                                    
+                                    <p>When you approach life with creative awareness, even waiting for the bus or preparing dinner can become sources of fresh ideas.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <!-- Fourth Post -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/mindfulcreativity.jpg" alt="Creative Mindfulness">
+                                <span class="category-tag">Wellness</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category">Creativity</span>
+                                <h2>Mindfulness and Creativity: The Connection</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 22, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                                </div>
+                                <p class="post-preview">Exploring how mindfulness practices can enhance creative thinking and problem-solving...</p>
+                                <div class="full-content" style="display: none;">
+                                    <p>Mindfulness practices can significantly enhance creative thinking by increasing awareness and creating mental space for new ideas to emerge.</p>
+                                    
+                                    <h3>The Mindful Creative</h3>
+                                    <p>Mindfulness—the practice of present-moment awareness without judgment—creates the mental space needed for creative insights to emerge.</p>
+                                    
+                                    <h3>Practices for Creative Minds</h3>
+                                    <ul>
+                                        <li>Brief meditation sessions before creative work</li>
+                                        <li>Mindful observation exercises to enhance sensory awareness</li>
+                                        <li>Body scanning to release physical tension that blocks creativity</li>
+                                        <li>Breathing techniques to quiet the inner critic</li>
+                                    </ul>
+                                    
+                                    <p>Even five minutes of mindfulness practice before a creative session can significantly improve your creative output.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                 <!-- Sidebar -->
+                 <div class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="lifestyle.html">Lifestyle <span>(12)</span></a></li>
+                            <li><a href="wellness.html">Wellness <span>(9)</span></a></li>
+                            <li><a href="home.html">Home & Living <span>(5)</span></a></li>
+                            <li><a href="creativity.html">Creativity <span>(4)</span></a></li>
+                            <li><a href="mindfulness.html">Mindfulness <span>(10)</span></a></li>
+                            <li><a href="personal-growth.html">Personal Growth <span>(7)</span></a></li>
+                        </ul>
+                    </div>
+            <!-------------------------------POPULAR POSTS---------------------------->
+                    <div class="sidebar-widget popular-posts-widget">
+                        <div class="widget-title">
+                            <h3>Popular Posts</h3>
+                        </div>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/morningroutine1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="lifestyle.html">Creating a Mindful Morning Routine</a></h4>
+                                    <span>March 1, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/selfcare1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="wellness.html">Simple Self-Care Practices for Busy Days</a></h4>
+                                    <span>March 18, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/livingSpace1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="home.html">Creating a Cozy and Inviting Space</a></h4>
+                                    <span>March 20, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+
+        <!-- Newsletter Subscription Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Join the Community</h2>
+                    <p>Sign up for our newsletter to receive updates, exclusive content, and more.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+ <!---------------------------- Footer Section - Consistent across all pages ------------------------------->
+ <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h2>Beyond Boundaries</h2>
+                </div>
+                <p>Empowering individuals to live mindfully, embrace creativity, and find joy in everyday moments. Join our community of like-minded souls on a journey of self-discovery.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/beyondboundaries_blog" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/beyond_bounds" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../tracker.html">Tracker</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="wellness.html">Wellness</a></li>
+                        <li><a href="lifestyle.html">Lifestyle</a></li>
+                        <li><a href="creativity.html">Creativity</a></li>
+                        <li><a href="personal-growth.html">Personal Growth</a></li>
+                        <li><a href="home.html">Home & Living</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@beyondboundaries.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Mindful Street, Wellness City, WC 12345</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2025 Beyond Boundaries. All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- JavaScript Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function toggleContent(button) {
+            // Find the closest blog-post parent
+            const blogPost = button.closest('.blog-post');
+            
+            // Find the preview and full content within this blog post
+            const preview = blogPost.querySelector('.post-preview');
+            const fullContent = blogPost.querySelector('.full-content');
+            
+            // Toggle visibility
+            if (fullContent.style.display === 'none') {
+                preview.style.display = 'none';
+                fullContent.style.display = 'block';
+                button.textContent = 'Show Less';
+            } else {
+                preview.style.display = 'block';
+                fullContent.style.display = 'none';
+                button.textContent = 'Continue Reading';
+            }
+            
+            // Scroll to the top of this blog post
+            blogPost.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Remove all pagination-related functions (showPage, showNextPage, showPrevPage)
+    </script>
+</body>
+</html>

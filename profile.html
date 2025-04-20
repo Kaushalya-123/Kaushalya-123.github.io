@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile - Beyond Boundaries</title>
+
+
+    <!-- External CSS Dependencies -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logoimage.jpeg" type="image/x-icon">
+
+    <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Authentication Modal -->
+    <div class="auth-modal" id="authModal">
+        <div class="modal-content">
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="signin">Sign In</button>
+                <button class="auth-tab" data-tab="signup">Create Account</button>
+            </div>
+            
+            <!-- Sign In Form -->
+            <form id="signInForm" class="auth-form active">
+                <div class="form-group">
+                    <label for="signInEmail">Email</label>
+                    <input type="email" id="signInEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signInPassword">Password</label>
+                    <input type="password" id="signInPassword" name="password" required>
+                </div>
+                <button type="submit" class="btn submit-btn">Sign In</button>
+                <p class="form-footer">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </p>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signUpForm" class="auth-form">
+                <div class="form-group">
+                    <label for="signUpName">Full Name</label>
+                    <input type="text" id="signUpName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signUpEmail">Email</label>
+                    <input type="email" id="signUpEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signUpPassword">Password</label>
+                    <input type="password" id="signUpPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signUpConfirmPassword">Confirm Password</label>
+                    <input type="password" id="signUpConfirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="btn submit-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="/index.html"><img src="images/logoimage.jpeg" alt="logo" width="60"></a>
+                    
+                    <h1>Beyond Boundaries</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="tracker.html">Tracker</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="user-profile">
+                    <a href="profile.html" class="profile-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                </div>
+                <!-- Hamburger menu for mobile -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hide the main profile content initially -->
+    <main class="profile-main" style="display: none;">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-cover"></div>
+                <div class="profile-info">
+                    <div class="profile-avatar" id="profileAvatar">
+                        <i class="fas fa-user-circle"></i>
+                        <!-- Image will be inserted here via JavaScript when uploaded -->
+                    </div>
+                    <h1>Khushpreet Kaur Lotey</h1>
+                    <p class="profile-bio">Passionate about mindful living and personal growth</p>
+                </div>
+            </div>
+
+            <div class="profile-content">
+                <div class="profile-stats">
+                    <div class="stat-box">
+                        <i class="fas fa-book-reader"></i>
+                        <h3>12</h3>
+                        <p>Posts Read</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-bookmark"></i>
+                        <h3>5</h3>
+                        <p>Saved Posts</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>8</h3>
+                        <p>Tracked Goals</p>
+                    </div>
+                </div>
+
+                <div class="profile-details">
+                    <div class="detail-section">
+                        <h2>Personal Information</h2>
+                        <div class="detail-grid">
+                            <div class="detail-item">
+                                <label>Email</label>
+                                <p>khushpreetlotey@gmail.com</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>Member Since</label>
+                                <p id="memberSince">January 2023</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>Location</label>
+                                <p>Brampton, Canada</p>
+                            </div>
+                        </div>
+                        <div class="profile-actions">
+                            <button class="btn edit-btn">Edit Profile</button>
+                            <button class="btn signout-btn" id="signOutBtn">
+                                <i class="fas fa-sign-out-alt"></i> Sign Out
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <div class="edit-profile-modal" id="editProfileModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Edit Profile</h2>
+            <form id="editProfileForm">
+                <div class="form-group">
+                    <label for="editName">Name</label>
+                    <input type="text" id="editName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="editBio">Bio</label>
+                    <textarea id="editBio" name="bio" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="editEmail">Email</label>
+                    <input type="email" id="editEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="editLocation">Location</label>
+                    <input type="text" id="editLocation" name="location">
+                </div>
+                <div class="form-group">
+                    <label for="editAvatar">Profile Picture</label>
+                    <input type="file" id="editAvatar" name="avatar" accept="image/*">
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn save-btn">Save Changes</button>
+                    <button type="button" class="btn cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
+
+
+

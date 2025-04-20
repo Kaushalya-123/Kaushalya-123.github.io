@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Growth - Beyond Boundaries</title>
+    
+    <!-- CSS Dependencies -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/categories.css">
+    <link rel="shortcut icon" href="../images/logoimage.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!------------------------- Header Section - Consistent across all pages ------------------------>
+   <header>
+    <div class="container">
+        <nav>
+            <!-- Logo and Site Title -->
+            <div class="logo">
+                <a href="/index.html"><img src="../images/logoimage.jpeg" alt="logo" width="60"></a>
+                <h1>Beyond Boundaries</h1>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="home">Home</a></li>
+                <li><a href="../about.html" data-i18n="about">About</a></li>
+                <li><a href="../blog.html" data-i18n="blog">Blog</a></li>
+                <li><a href="../tracker.html" data-i18n="tracker">Tracker</a></li>
+                <li><a href="../contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <a href="../profile.html" class="profile-icon">
+                    <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+            </div>
+            <!-- Mobile Menu Hamburger Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+    <!-- Category Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Personal Growth</h1>
+            <p>Discover strategies for continuous self-improvement and development</p>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-main">
+                    <!-- Featured Post -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="../category posts images/goals.jpg" alt="Goal Setting">
+                            <span class="category-tag">Featured</span>
+                        </div>
+                        <div class="post-content">
+                            <span class="category">Personal Growth</span>
+                            <h2>Setting Meaningful Goals That Align With Your Values</h2>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar"></i> May 29, 2025</span>
+                                <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                            </div>
+                            <p class="post-excerpt">Learn how to set and achieve goals that truly matter to you and align with your core values...</p>
+                            <div class="full-content" style="display: none;">
+                                <p>Setting meaningful goals is more than just writing down what you want to achieve. It's about understanding your core values and ensuring your objectives align with what truly matters to you.</p>
+                                <h3>Understanding Your Values</h3>
+                                <p>Before setting goals, take time to reflect on your personal values. What matters most to you? What brings you genuine fulfillment? Your values serve as a compass for goal-setting.</p>
+                                <h3>Creating Aligned Goals</h3>
+                                <p>Once you understand your values, create goals that reflect them. This alignment ensures your goals are meaningful and motivating. Consider both short-term and long-term objectives.</p>
+                                <h3>Implementation Strategies</h3>
+                                <ul>
+                                    <li>Break down larger goals into smaller, manageable steps</li>
+                                    <li>Create specific action plans with deadlines</li>
+                                    <li>Regular review and adjustment of goals</li>
+                                    <li>Celebrate progress and small wins</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                        </div>
+                    </article>
+
+                    <!-- Second Post -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="../category posts images/challenges.jpg" alt="Growth Mindset">
+                        </div>
+                        <div class="post-content">
+                            <span class="category">Personal Growth</span>
+                            <h2>Cultivating a Growth Mindset: Embracing Challenges</h2>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar"></i> April 10, 2025</span>
+                                <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                            </div>
+                            <p class="post-excerpt">Discover how shifting from a fixed to a growth mindset can transform your life...</p>
+                            <div class="full-content" style="display: none;">
+                                <p>A growth mindset is the belief that abilities can be developed through dedication and hard work. This perspective transforms challenges into opportunities for learning and growth.</p>
+                                <h3>Key Principles of Growth Mindset</h3>
+                                <p>Understanding that intelligence and talent are not fixed traits but can be developed through effort, learning, and persistence is fundamental to the growth mindset.</p>
+                                <h3>Practical Steps</h3>
+                                <ul>
+                                    <li>Embrace challenges as learning opportunities</li>
+                                    <li>View failures as feedback</li>
+                                    <li>Focus on the process, not just the outcome</li>
+                                    <li>Cultivate curiosity and continuous learning</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                        </div>
+                    </article>
+
+                    <!-- Third Post -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="../category posts images/habits.jpg" alt="Habit Formation">
+                        </div>
+                        <div class="post-content">
+                            <span class="category">Personal Growth</span>
+                            <h2>The Science of Habit Formation: Building Better Routines</h2>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar"></i> March 14, 2025</span>
+                                <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                            </div>
+                            <p class="post-excerpt">Understand the psychology behind habits and learn effective strategies...</p>
+                            <div class="full-content" style="display: none;">
+                                <p>Habits are the building blocks of our daily lives. Understanding how they form and how to modify them is crucial for personal growth and development.</p>
+                                <h3>The Habit Loop</h3>
+                                <p>Every habit follows a pattern: Cue → Routine → Reward. Understanding this loop is essential for creating lasting change.</p>
+                                <h3>Building Better Habits</h3>
+                                <ul>
+                                    <li>Start small and build gradually</li>
+                                    <li>Create clear environmental triggers</li>
+                                    <li>Make good habits easy and bad habits difficult</li>
+                                    <li>Track progress consistently</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                        </div>
+                    </article>
+
+                    <!-- Fourth Post -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="../category posts images/comfortzone.jpg" alt="Comfort Zone">
+                        </div>
+                        <div class="post-content">
+                            <span class="category">Personal Growth</span>
+                            <h2>Stepping Out of Your Comfort Zone: A Guide to Personal Growth</h2>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar"></i> March 19, 2025</span>
+                                <span class="post-author"><i class="far fa-user"></i> by Kaushy</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                            </div>
+                            <p class="post-excerpt">Learn how to strategically step outside your comfort zone...</p>
+                            <div class="full-content" style="display: none;">
+                                <p>Your comfort zone is a behavioral space where activities and behaviors fit a routine and pattern that minimizes stress and risk. While comfortable, it's essential to step beyond it for growth.</p>
+                                <h3>Benefits of Leaving Your Comfort Zone</h3>
+                                <p>Stepping out of your comfort zone leads to new experiences, skills, and perspectives that contribute to personal growth and development.</p>
+                                <h3>Strategic Approaches</h3>
+                                <ul>
+                                    <li>Start with small challenges</li>
+                                    <li>Set progressive goals</li>
+                                    <li>Create a support system</li>
+                                    <li>Reflect on and celebrate progress</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                        </div>
+                    </article>
+                </div>
+
+                   <!-- Sidebar -->
+                   <div class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="lifestyle.html">Lifestyle <span>(12)</span></a></li>
+                            <li><a href="wellness.html">Wellness <span>(9)</span></a></li>
+                            <li><a href="home.html">Home & Living <span>(5)</span></a></li>
+                            <li><a href="creativity.html">Creativity <span>(4)</span></a></li>
+                            <li><a href="mindfulness.html">Mindfulness <span>(10)</span></a></li>
+                            <li><a href="personal-growth.html">Personal Growth <span>(7)</span></a></li>
+                        </ul>
+                    </div>
+
+            <!-------------------------------POPULAR POSTS---------------------------->
+                    <div class="sidebar-widget popular-posts-widget">
+                        <div class="widget-title">
+                            <h3>Popular Posts</h3>
+                        </div>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/morningroutine1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="lifestyle.html">Creating a Mindful Morning Routine</a></h4>
+                                    <span>March 1, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/selfcare1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="wellness.html">Simple Self-Care Practices for Busy Days</a></h4>
+                                    <span>March 18, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/livingSpace1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="home.html">Creating a Cozy and Inviting Space</a></h4>
+                                    <span>March 20, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join the Community</h2>
+                <p>Sign up for our newsletter to receive updates, exclusive content, and more.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+ <!---------------------------- Footer Section - Consistent across all pages ------------------------------->
+ <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h2>Beyond Boundaries</h2>
+                </div>
+                <p>Empowering individuals to live mindfully, embrace creativity, and find joy in everyday moments. Join our community of like-minded souls on a journey of self-discovery.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/beyondboundaries_blog" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/beyond_bounds" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../tracker.html">Tracker</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="wellness.html">Wellness</a></li>
+                        <li><a href="lifestyle.html">Lifestyle</a></li>
+                        <li><a href="creativity.html">Creativity</a></li>
+                        <li><a href="personal-growth.html">Personal Growth</a></li>
+                        <li><a href="home.html">Home & Living</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@beyondboundaries.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Mindful Street, Wellness City, WC 12345</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2025 Beyond Boundaries. All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- JavaScript Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function toggleContent(button) {
+            const blogPost = button.closest('.blog-post');
+            const preview = blogPost.querySelector('.post-excerpt');
+            const fullContent = blogPost.querySelector('.full-content');
+            
+            if (fullContent) {
+                if (fullContent.style.display === 'none') {
+                    preview.style.display = 'none';
+                    fullContent.style.display = 'block';
+                    button.textContent = 'Show Less';
+                } else {
+                    preview.style.display = 'block';
+                    fullContent.style.display = 'none';
+                    button.textContent = 'Continue Reading';
+                }
+                blogPost.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function showPage(pageNumber) {
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach((page, index) => {
+                if (index + 1 === pageNumber) {
+                    page.style.display = 'block';
+                } else {
+                    page.style.display = 'none';
+                }
+            });
+            updatePagination(pageNumber);
+        }
+
+        function showNextPage() {
+            const currentPage = document.querySelector('.pagination .active').textContent;
+            const nextPage = parseInt(currentPage) + 1;
+            if (nextPage <= 3) {
+                showPage(nextPage);
+            }
+        }
+
+        function updatePagination(activePage) {
+            const paginationLinks = document.querySelectorAll('.pagination a');
+            paginationLinks.forEach(link => {
+                if (link.textContent.trim() === activePage.toString()) {
+                    link.classList.add('active');
+                } else if (!link.classList.contains('next')) {
+                    link.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+

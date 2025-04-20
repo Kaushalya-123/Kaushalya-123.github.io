@@ -1,149 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Blog - Beyond Boundaries</title>
+
+    <!-- External CSS Dependencies -->
+    <!-- Bootstrap CSS for responsive grid and components -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="/images/logoimage.jpeg" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logoimage.jpeg" type="image/x-icon">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header - Use this same header in all pages -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <img src="images/logoimage.jpeg" alt="logo" width="60">
-                    <h1>Beyond Boundaries</h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="tracker.html">Tracker</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+              <!------------------------- Header Section - Consistent across all pages ------------------------>
+  <header>
+    <div class="container">
+        <nav>
+            <!-- Logo and Site Title -->
+            <div class="logo">
+                <a href="/index.html"><img src="images/logoimage.jpeg" alt="logo" width="60"></a>
+                <h1>Beyond Boundaries</h1>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="about.html" data-i18n="about">About</a></li>
+                <li><a href="blog.html" data-i18n="blog">Blog</a></li>
+                <li><a href="tracker.html" data-i18n="tracker">Tracker</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <a href="profile.html" class="profile-icon">
+                    <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+            </div>
+            <!-- Mobile Menu Hamburger Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
 
+    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
             <h1>Blog</h1>
         </div>
     </section>
 
+    <!-- Main Blog Content -->
     <section class="blog-content">
         <div class="container">
             <div class="blog-grid">
                 <div class="blog-main">
+                    <!-- Blog Posts -->
                     <div class="blog-post">
                         <div class="blog-img">
-                            <img src="https://via.placeholder.com/800x500" alt="Blog Post">
+                            <img src="./images/morningroutine1.jpg" alt="Blog Post">
                         </div>
                         <div class="blog-text">
+                            <!-- Post Meta Information -->
                             <span class="category">Lifestyle</span>
                             <h2>Creating a Mindful Morning Routine</h2>
                             <div class="post-meta">
-                                <span class="post-date">April 1, 2023</span>
+                                <span class="post-date">March 1, 2025</span>
                                 <span class="post-author">by Khushi</span>
                             </div>
-                            <p>Start your day with intention and purpose with these simple morning rituals that will help you feel centered, focused, and ready to take on the day.</p>
-                            <a href="#" class="read-more">Read More</a>
+                            <!-- Post Preview -->
+                            <p>Start your day with intention and purpose with these simple morning rituals...</p>
+                            <a href="categories/lifestyle.html" class="read-more">Read More</a>
                         </div>
                     </div>
                     
+                    <!-- Additional Blog Posts -->
                     <div class="blog-post">
                         <div class="blog-img">
-                            <img src="https://via.placeholder.com/800x500" alt="Blog Post">
+                            <img src="./images/selfcare1.jpg" alt="Blog Post" height="300">
                         </div>
                         <div class="blog-text">
                             <span class="category">Wellness</span>
                             <h2>Simple Self-Care Practices for Busy Days</h2>
                             <div class="post-meta">
-                                <span class="post-date">March 25, 2023</span>
+                                <span class="post-date">March 18, 2025</span>
                                 <span class="post-author">by Khushi</span>
                             </div>
                             <p>Incorporate these quick self-care rituals into your busy schedule to help you stay grounded and prevent burnout, even on your most hectic days.</p>
-                            <a href="#" class="read-more">Read More</a>
+                            <a href="categories/wellness.html" class="read-more">Read More</a>
                         </div>
                     </div>
                     
                     <div class="blog-post">
                         <div class="blog-img">
-                            <img src="https://via.placeholder.com/800x500" alt="Blog Post">
+                            <img src="./images/livingSpace1.jpg" alt="Blog Post">
                         </div>
                         <div class="blog-text">
                             <span class="category">Home</span>
                             <h2>Creating a Cozy and Inviting Space</h2>
                             <div class="post-meta">
-                                <span class="post-date">March 18, 2023</span>
-                                <span class="post-author">by Khushi</span>
+                                <span class="post-date">March 20, 2025</span>
+                                <span class="post-author">by Kaushy</span>
                             </div>
                             <p>Transform your home into a sanctuary with these simple decorating tips that will help you create a space that feels warm, inviting, and uniquely yours.</p>
-                            <a href="#" class="read-more">Read More</a>
+                            <a href="categories/home.html" class="read-more">Read More</a>
                         </div>
                     </div>
                     
                     <div class="blog-post">
                         <div class="blog-img">
-                            <img src="https://via.placeholder.com/800x500" alt="Blog Post">
+                            <img src="./images/inspiration.jpg" alt="Blog Post">
                         </div>
                         <div class="blog-text">
                             <span class="category">Creativity</span>
                             <h2>Finding Inspiration in Everyday Moments</h2>
                             <div class="post-meta">
-                                <span class="post-date">March 10, 2023</span>
+                                <span class="post-date">March 10, 2025</span>
                                 <span class="post-author">by Khushi</span>
                             </div>
                             <p>Discover how to tap into the beauty and inspiration that surrounds you in your daily life, and use it to fuel your creative pursuits.</p>
-                            <a href="#" class="read-more">Read More</a>
+                            <a href="categories/creativity.html" class="read-more">Read More</a>
                         </div>
                     </div>
                     
                     <div class="blog-post">
                         <div class="blog-img">
-                            <img src="https://via.placeholder.com/800x500" alt="Blog Post">
+                            <img src="./images/slowliving.jpg" alt="Blog Post">
                         </div>
                         <div class="blog-text">
                             <span class="category">Mindfulness</span>
                             <h2>The Art of Slow Living in a Fast-Paced World</h2>
                             <div class="post-meta">
-                                <span class="post-date">March 3, 2023</span>
-                                <span class="post-author">by Khushi</span>
+                                <span class="post-date">March 3, 2025</span>
+                                <span class="post-author">by Kaushy</span>
                             </div>
                             <p>Learn how to embrace the principles of slow living and create more space for joy, connection, and meaning in your everyday life.</p>
-                            <a href="#" class="read-more">Read More</a>
+                            <a href="categories/mindfulness.html" class="read-more">Read More</a>
                         </div>
-                    </div>
-                    
-                    <div class="pagination">
-                        <a href="#" class="active">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#" class="next">Next <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 
+                <!-- Sidebar -->
                 <div class="blog-sidebar">
                     <div class="sidebar-widget about-widget">
                         <div class="widget-title">
-                            <h3>About Me</h3>
+                            <h3>About Us</h3>
                         </div>
                         <div class="about-img">
-                            <img src="https://via.placeholder.com/300x300" alt="About Me">
+                            <img src="./images/about.jpg" alt="About Us">
                         </div>
-                        <p>Hi, I'm Khushi! I'm passionate about mindful living, creativity, and finding joy in the everyday moments.</p>
+                        <p>Hi, We're K&K! We're passionate about mindful living, creativity, and finding joy in the everyday moments.</p>
                         <a href="about.html" class="btn">Read More</a>
                     </div>
                     
@@ -152,15 +173,16 @@
                             <h3>Categories</h3>
                         </div>
                         <ul>
-                            <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                            <li><a href="#">Wellness <span>(8)</span></a></li>
-                            <li><a href="#">Home <span>(6)</span></a></li>
-                            <li><a href="#">Creativity <span>(4)</span></a></li>
-                            <li><a href="#">Mindfulness <span>(10)</span></a></li>
-                            <li><a href="#">Personal Growth <span>(7)</span></a></li>
+                            <li><a href="categories/lifestyle.html">Lifestyle <span>(12)</span></a></li>
+                            <li><a href="categories/wellness.html">Wellness <span>(9)</span></a></li>
+                            <li><a href="categories/home.html">Home & Living <span>(6)</span></a></li>
+                            <li><a href="categories/creativity.html">Creativity <span>(4)</span></a></li>
+                            <li><a href="categories/mindfulness.html">Mindfulness <span>(10)</span></a></li>
+                            <li><a href="categories/personal-growth.html">Personal Growth <span>(7)</span></a></li>
                         </ul>
                     </div>
-                    
+
+                    <!-------------------------------POPULAR POSTS---------------------------->
                     <div class="sidebar-widget popular-posts-widget">
                         <div class="widget-title">
                             <h3>Popular Posts</h3>
@@ -168,72 +190,93 @@
                         <div class="popular-posts">
                             <div class="popular-post">
                                 <div class="popular-img">
-                                    <img src="https://via.placeholder.com/100x100" alt="Popular Post">
+                                    <img src="./images/morningroutine1.jpg" alt="Popular Post">
                                 </div>
                                 <div class="popular-text">
-                                    <h4><a href="#">Creating a Mindful Morning Routine</a></h4>
-                                    <span>April 1, 2023</span>
+                                    <h4><a href="categories/lifestyle.html">Creating a Mindful Morning Routine</a></h4>
+                                    <span>March 1, 2025</span>
                                 </div>
                             </div>
                             
                             <div class="popular-post">
                                 <div class="popular-img">
-                                    <img src="https://via.placeholder.com/100x100" alt="Popular Post">
+                                    <img src="./images/selfcare1.jpg" alt="Popular Post">
                                 </div>
                                 <div class="popular-text">
-                                    <h4><a href="#">Simple Self-Care Practices for Busy Days</a></h4>
-                                    <span>March 25, 2023</span>
+                                    <h4><a href="categories/wellness.html">Simple Self-Care Practices for Busy Days</a></h4>
+                                    <span>April 15, 2025</span>
                                 </div>
                             </div>
                             
                             <div class="popular-post">
                                 <div class="popular-img">
-                                    <img src="https://via.placeholder.com/100x100" alt="Popular Post">
+                                    <img src="./images/livingSpace1.jpg" alt="Popular Post">
                                 </div>
                                 <div class="popular-text">
-                                    <h4><a href="#">Creating a Cozy and Inviting Space</a></h4>
-                                    <span>March 18, 2023</span>
+                                    <h4><a href="categories/home.html">Creating a Cozy and Inviting Space</a></h4>
+                                    <span>March 20, 2025</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
+                    <!-- Instagram Widget -->
                     <div class="sidebar-widget instagram-widget">
                         <div class="widget-title">
                             <h3>Instagram</h3>
                         </div>
                         <div class="instagram-grid-small">
                             <div class="instagram-item-small">
-                                <img src="https://via.placeholder.com/100x100" alt="Instagram">
+                                <img src="./images/insta1.jpg" alt="Morning Meditation">
+                                <div class="instagram-caption">
+                                    <p>Morning meditation ritual 🧘‍♀️ #mindfulness</p>
+                                </div>
                             </div>
                             <div class="instagram-item-small">
-                                <img src="https://via.placeholder.com/100x100" alt="Instagram">
+                                <img src="./images/insta2.jpg" alt="Healthy Breakfast">
+                                <div class="instagram-caption">
+                                    <p>Starting the day right 🥑 #wellness</p>
+                                </div>
                             </div>
                             <div class="instagram-item-small">
-                                <img src="https://via.placeholder.com/100x100" alt="Instagram">
+                                <img src="./images/insta3.jpg" alt="Journaling">
+                                <div class="instagram-caption">
+                                    <p>Daily fitness routine #selfcare</p>
+                                </div>
                             </div>
                             <div class="instagram-item-small">
-                                <img src="https://via.placeholder.com/100x100" alt="Instagram">
+                                <img src="./images/insta4.jpg" alt="Workspace">
+                                <div class="instagram-caption">
+                                    <p>Weekend reads ☕️ #slowliving</p>
+                                </div>
                             </div>
                             <div class="instagram-item-small">
-                                <img src="https://via.placeholder.com/100x100" alt="Instagram">
+                                <img src="./images/insta5.jpg" alt="Nature Walk">
+                                <div class="instagram-caption">
+                                    <p>Yoga Therapy 🌿 #mindfulness</p>
+                                </div>
                             </div>
                             <div class="instagram-item-small">
-                                <img src="https://via.placeholder.com/100x100" alt="Instagram">
+                                <img src="./images/insta6.jpg" alt="Book and Coffee">
+                                <div class="instagram-caption">
+                                    <p>Cozy workspace vibes 💻 #creativity</p>
+                                </div>
                             </div>
                         </div>
-                        <a href="https://instagram.com" target="_blank" class="btn">Follow @khushi</a>
+                        <a href="https://instagram.com" target="_blank" class="btn">Follow @beyondboundaries_blog</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    
+    <!-- Newsletter Subscription Section -->
     <section class="newsletter">
         <div class="container">
             <div class="newsletter-content">
                 <h2>Join the Community</h2>
-                <p>Sign up for my newsletter to receive updates, exclusive content, and more.</p>
+                <p>Sign up for our newsletter to receive updates, exclusive content, and more.</p>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Your email address" required>
                     <button type="submit" class="btn">Subscribe</button>
@@ -242,8 +285,8 @@
         </div>
     </section>
 
-    <!-- Footer - Use this same footer in all pages -->
-    <footer>
+     <!---------------------------- Footer Section - Consistent across all pages ------------------------------->
+     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
@@ -252,10 +295,10 @@
                     </div>
                     <p>Empowering individuals to live mindfully, embrace creativity, and find joy in everyday moments. Join our community of like-minded souls on a journey of self-discovery.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/beyondboundaries_blog" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.facebook.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/beyond_bounds" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
 
@@ -276,11 +319,12 @@
                     <h3>Categories</h3>
                     <div class="footer-links">
                         <ul>
-                            <li><a href="#">Mindfulness</a></li>
-                            <li><a href="#">Wellness</a></li>
-                            <li><a href="#">Lifestyle</a></li>
-                            <li><a href="#">Creativity</a></li>
-                            <li><a href="#">Personal Growth</a></li>
+                            <li><a href="categories/mindfulness.html">Mindfulness</a></li>
+                            <li><a href="categories/wellness.html">Wellness</a></li>
+                            <li><a href="categories/lifestyle.html">Lifestyle</a></li>
+                            <li><a href="categories/creativity.html">Creativity</a></li>
+                            <li><a href="categories/personal-growth.html">Personal Growth</a></li>
+                            <li><a href="categories/home.html">Home & Living</a></li>
                         </ul>
                     </div>
                 </div>
@@ -306,7 +350,7 @@
 
             <div class="footer-bottom">
                 <div class="copyright">
-                    <p>&copy; 2023 Beyond Boundaries. All Rights Reserved.</p>
+                    <p>&copy; 2025 Beyond Boundaries. All Rights Reserved.</p>
                 </div>
                 <div class="footer-bottom-links">
                     <a href="#">Privacy Policy</a>
@@ -317,7 +361,10 @@
         </div>
     </footer>
 
-    <script src="/js/blog.js"></script>
+
+    <!-- JavaScript Dependencies -->
+    <script src="js/common.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 </html>
 

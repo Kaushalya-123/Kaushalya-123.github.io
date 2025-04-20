@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Khushi Project</title>
+
+    <title>Contact - Beyond Boundaries</title>
+
+    <!-- External CSS Dependencies -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logoimage.jpeg" type="image/x-icon">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <h1>Khushi</h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+              <!------------------------- Header Section - Consistent across all pages ------------------------>
+  <header>
+    <div class="container">
+        <nav>
+            <!-- Logo and Site Title -->
+            <div class="logo">
+                <a href="/index.html"><img src="images/logoimage.jpeg" alt="logo" width="60"></a>
+                <h1>Beyond Boundaries</h1>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><a href="about.html" data-i18n="about">About</a></li>
+                <li><a href="blog.html" data-i18n="blog">Blog</a></li>
+                <li><a href="tracker.html" data-i18n="tracker">Tracker</a></li>
+                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <a href="profile.html" class="profile-icon">
+                    <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+            </div>
+            <!-- Mobile Menu Hamburger Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
 
+    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
             <h1>Contact</h1>
         </div>
     </section>
 
+    <!-- Contact Content Section -->
     <section class="contact-content">
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
                     <h2>Get in Touch</h2>
-                    <p>I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hello, feel free to reach out using the contact form or through my social media channels.</p>
+                    <p>We'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hello, feel free to reach out using the contact form or through my social media channels.</p>
                     
                     <div class="contact-details">
                         <div class="contact-item">
@@ -52,7 +77,7 @@
                             </div>
                             <div class="contact-text">
                                 <h3>Email</h3>
-                                <p>hello@khushi.com</p>
+                                <p>hello@beyondboundaries.com</p>
                             </div>
                         </div>
                         
@@ -62,7 +87,7 @@
                             </div>
                             <div class="contact-text">
                                 <h3>Location</h3>
-                                <p>San Francisco, CA</p>
+                                <p>123 Mindful Street, Wellness City, CA</p>
                             </div>
                         </div>
                         
@@ -113,37 +138,40 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
     <section class="faq">
         <div class="container">
             <h2 class="section-title">Frequently Asked Questions</h2>
             
             <div class="faq-item">
                 <h3>Do you accept guest posts?</h3>
-                <p>Yes, I do accept guest posts that align with the themes and values of this blog. Please use the contact form to pitch your idea before submitting a full article.</p>
+                <p>Yes, we do accept guest posts that align with the themes and values of this blog. Please use the contact form to pitch your idea before submitting a full article.</p>
             </div>
             
             <div class="faq-item">
                 <h3>Can we collaborate on a project?</h3>
-                <p>I'm always open to collaborations with like-minded individuals and brands. Please reach out with details about your project, and we can discuss potential partnerships.</p>
+                <p>We're always open to collaborations with like-minded individuals and brands. Please reach out with details about your project, and we can discuss potential partnerships.</p>
             </div>
             
             <div class="faq-item">
-                <h3>How can I support your work?</h3>
-                <p>The best way to support my work is by subscribing to my newsletter, sharing my content with others, and engaging with my posts. Your support means the world to me!</p>
+                <h3>How can we support your work?</h3>
+                <p>The best way to support our work is by subscribing to our newsletter, sharing our content with others, and engaging with our posts. Your support means the world to us!</p>
             </div>
             
             <div class="faq-item">
                 <h3>How quickly do you respond to messages?</h3>
-                <p>I aim to respond to all messages within 48 hours. However, during busy periods, it may take a little longer. Thank you for your patience!</p>
+                <p>We aim to respond to all messages within 48 hours. However, during busy periods, it may take a little longer. Thank you for your patience!</p>
             </div>
         </div>
     </section>
 
+    
+    <!-- Newsletter Subscription Section -->
     <section class="newsletter">
         <div class="container">
             <div class="newsletter-content">
                 <h2>Join the Community</h2>
-                <p>Sign up for my newsletter to receive updates, exclusive content, and more.</p>
+                <p>Sign up for our newsletter to receive updates, exclusive content, and more.</p>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Your email address" required>
                     <button type="submit" class="btn">Subscribe</button>
@@ -152,82 +180,83 @@
         </div>
     </section>
 
-    <!-- Footer - Use this same footer in all pages -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <h2>Beyond Boundaries</h2>
-                    </div>
-                    <p>Empowering individuals to live mindfully, embrace creativity, and find joy in everyday moments. Join our community of like-minded souls on a journey of self-discovery.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+   <!---------------------------- Footer Section - Consistent across all pages ------------------------------->
+   <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h2>Beyond Boundaries</h2>
                 </div>
-
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <div class="footer-links">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="tracker.html">Tracker</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+                <p>Empowering individuals to live mindfully, embrace creativity, and find joy in everyday moments. Join our community of like-minded souls on a journey of self-discovery.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/beyondboundaries_blog" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/beyond_bounds" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                 </div>
+            </div>
 
-                <div class="footer-section">
-                    <h3>Categories</h3>
-                    <div class="footer-links">
-                        <ul>
-                            <li><a href="#">Mindfulness</a></li>
-                            <li><a href="#">Wellness</a></li>
-                            <li><a href="#">Lifestyle</a></li>
-                            <li><a href="#">Creativity</a></li>
-                            <li><a href="#">Personal Growth</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <ul class="footer-contact">
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>hello@beyondboundaries.com</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>123 Mindful Street, Wellness City, WC 12345</span>
-                        </li>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="tracker.html">Tracker</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <div class="copyright">
-                    <p>&copy; 2023 Beyond Boundaries. All Rights Reserved.</p>
-                </div>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="categories/mindfulness.html">Mindfulness</a></li>
+                        <li><a href="categories/wellness.html">Wellness</a></li>
+                        <li><a href="categories/lifestyle.html">Lifestyle</a></li>
+                        <li><a href="categories/creativity.html">Creativity</a></li>
+                        <li><a href="categories/personal-growth.html">Personal Growth</a></li>
+                        <li><a href="categories/home.html">Home & Living</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@beyondboundaries.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Mindful Street, Wellness City, WC 12345</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2025 Beyond Boundaries. All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript Dependencies -->
     <script src="js/common.js"></script>
     <script src="js/contact.js"></script>
 </body>

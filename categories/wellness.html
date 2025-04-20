@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness - Beyond Boundaries</title>
+
+    <!-- CSS Dependencies -->
+     <!-- Bootstrap CSS for responsive grid and components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/categories.css">
+    <link rel="shortcut icon" href="../images/logoimage.jpeg" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!------------------------- Header Section - Consistent across all pages ------------------------>
+   <header>
+    <div class="container">
+        <nav>
+            <!-- Logo and Site Title -->
+            <div class="logo">
+                <a href="/index.html"><img src="../images/logoimage.jpeg" alt="logo" width="60"></a>
+                <h1>Beyond Boundaries</h1>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="home">Home</a></li>
+                <li><a href="../about.html" data-i18n="about">About</a></li>
+                <li><a href="../blog.html" data-i18n="blog">Blog</a></li>
+                <li><a href="../tracker.html" data-i18n="tracker">Tracker</a></li>
+                <li><a href="../contact.html" data-i18n="contact">Contact</a></li>
+            </ul>
+            <div class="user-profile">
+                <a href="../profile.html" class="profile-icon">
+                    <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+            </div>
+            <!-- Mobile Menu Hamburger Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <!-- Category Header -->
+    <section class="category-header wellness-header">
+        <div class="container">
+            <h1>Wellness</h1>
+            <p>Nurture your body, mind, and soul with holistic wellness practices</p>
+        </div>
+    </section>
+
+    <!-- Category Content -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-main">
+                    <!-- Page 1 Content - First 4 posts -->
+                    <div class="page-content" id="page1">
+                        <!-- Featured Wellness Post -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../images/selfcare1.jpg" alt="Wellness Featured Post">
+                                <span class="category-tag">Featured</span>
+                            </div>
+                            <div class="blog-text">
+                                <span class="category wellness-accent">Wellness</span>
+                                <h2>Essential Self-Care Practices for Mind and Body</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 15, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 10 min read</span>
+                                </div>
+                                <div class="post-preview">
+                                    <p>Discover simple yet effective self-care practices that can transform your daily routine and enhance your overall well-being.</p>
+                                </div>
+                                <div class="full-content" style="display: none;">
+                                    <p>In our fast-paced world, self-care often takes a backseat to our numerous responsibilities. However, prioritizing your well-being is essential for maintaining balance and preventing burnout.</p>
+                                    
+                                    <h3>Physical Self-Care</h3>
+                                    <p>Your body is your temple, and caring for it properly creates the foundation for overall wellness:</p>
+                                    <ul>
+                                        <li>Prioritize 7-8 hours of quality sleep each night</li>
+                                        <li>Move your body daily in ways that feel good</li>
+                                        <li>Nourish yourself with whole, nutrient-dense foods</li>
+                                        <li>Stay hydrated throughout the day</li>
+                                    </ul>
+                                    
+                                    <h3>Mental Self-Care</h3>
+                                    <p>Your thoughts shape your reality. Cultivate a healthy mindset through:</p>
+                                    <ul>
+                                        <li>Daily meditation or mindfulness practice</li>
+                                        <li>Journaling to process emotions</li>
+                                        <li>Setting healthy boundaries</li>
+                                        <li>Engaging in activities that challenge your mind</li>
+                                    </ul>
+                                    
+                                    <h3>Emotional Self-Care</h3>
+                                    <p>Honor your feelings and nurture your emotional health by:</p>
+                                    <ul>
+                                        <li>Connecting with supportive friends and family</li>
+                                        <li>Seeking therapy when needed</li>
+                                        <li>Practicing self-compassion</li>
+                                        <li>Engaging in activities that bring you joy</li>
+                                    </ul>
+                                    
+                                    <p>Remember, self-care isn't selfish—it's necessary. By filling your own cup first, you'll have more to give to others.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Wellness Posts -->
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/mindfuleating.jpg" alt="Wellness Post">
+                            </div>
+                            <div class="blog-text">
+                                <span class="category wellness-accent">Wellness</span>
+                                <h2>Mindful Eating: Nourishing Your Body and Soul</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> Marcy 10, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                </div>
+                                <div class="post-preview">
+                                    <p>Learn how to develop a healthier relationship with food through mindful eating practices.</p>
+                                </div>
+                                <div class="full-content" style="display: none;">
+                                    <p>Mindful eating is about being fully present during meals and developing awareness of your eating habits, hunger cues, and food choices.</p>
+                                    
+                                    <h3>Benefits of Mindful Eating</h3>
+                                    <ul>
+                                        <li>Better digestion and nutrient absorption</li>
+                                        <li>Reduced overeating and emotional eating</li>
+                                        <li>Greater satisfaction from meals</li>
+                                        <li>Healthier relationship with food</li>
+                                    </ul>
+                                    
+                                    <h3>Simple Mindful Eating Practices</h3>
+                                    <p>Try incorporating these practices into your daily routine:</p>
+                                    <ul>
+                                        <li>Eat without distractions (no phones, TV, or computers)</li>
+                                        <li>Chew thoroughly and savor each bite</li>
+                                        <li>Notice the colors, textures, and flavors of your food</li>
+                                        <li>Check in with your hunger levels before, during, and after eating</li>
+                                    </ul>
+                                    
+                                    <p>Remember, mindful eating isn't about perfection—it's about awareness and intention.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/sustainablefitness.jpg" alt="Wellness Post">
+                            </div>
+                            <div class="blog-text">
+                                <span class="category wellness-accent">Wellness</span>
+                                <h2>Creating a Sustainable Fitness Routine</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 25, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                </div>
+                                <div class="post-preview">
+                                    <p>Discover how to build a fitness routine that you'll actually stick with long-term.</p>
+                                </div>
+                                <div class="full-content" style="display: none;">
+                                    <p>The key to a sustainable fitness routine isn't about intensity—it's about consistency and enjoyment.</p>
+                                    
+                                    <h3>Finding Your Exercise Style</h3>
+                                    <p>The best workout is the one you'll actually do. Experiment with different activities to find what brings you joy:</p>
+                                    <ul>
+                                        <li>Group fitness classes for social motivation</li>
+                                        <li>Solo activities like running or swimming for reflection</li>
+                                        <li>Dance or martial arts for skill development</li>
+                                        <li>Yoga or Pilates for mind-body connection</li>
+                                    </ul>
+                                    
+                                    <h3>Building Consistency</h3>
+                                    <p>Set yourself up for success with these strategies:</p>
+                                    <ul>
+                                        <li>Start small—even 10-15 minutes counts</li>
+                                        <li>Schedule workouts like important appointments</li>
+                                        <li>Find an accountability partner</li>
+                                        <li>Track your progress to stay motivated</li>
+                                    </ul>
+                                    
+                                    <p>Remember that rest and recovery are essential components of any fitness routine. Listen to your body and adjust as needed.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/qualitysleep.jpg" alt="Wellness Post">
+                            </div>
+                            <div class="blog-text">
+                                <span class="category wellness-accent">Wellness</span>
+                                <h2>The Power of Quality Sleep</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 11, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 9 min read</span>
+                                </div>
+                                <div class="post-preview">
+                                    <p>Explore how prioritizing sleep can transform your health, productivity, and overall wellbeing.</p>
+                                </div>
+                                <div class="full-content" style="display: none;">
+                                    <p>Sleep is the foundation of good health, yet it's often the first thing we sacrifice in our busy lives.</p>
+                                    
+                                    <h3>Why Sleep Matters</h3>
+                                    <p>Quality sleep affects virtually every aspect of your health:</p>
+                                    <ul>
+                                        <li>Supports immune function and cellular repair</li>
+                                        <li>Enhances cognitive performance and memory</li>
+                                        <li>Regulates mood and emotional resilience</li>
+                                        <li>Balances hormones that control hunger and metabolism</li>
+                                    </ul>
+                                    
+                                    <h3>Creating a Sleep Sanctuary</h3>
+                                    <p>Transform your bedroom into an environment that promotes restful sleep:</p>
+                                    <ul>
+                                        <li>Keep your room cool, dark, and quiet</li>
+                                        <li>Remove electronic devices or use night mode</li>
+                                        <li>Invest in a comfortable mattress and pillows</li>
+                                        <li>Use calming scents like lavender</li>
+                                    </ul>
+                                    
+                                    <p>Consistency is key—aim to go to bed and wake up at the same times each day, even on weekends.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 2 Content -->
+                    <div class="page-content" id="page2" style="display: none;">
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/digidetox.jpg" alt="Wellness Post">
+                            </div>
+                            <div class="blog-text">
+                                <span class="category wellness-accent">Wellness</span>
+                                <h2>Digital Detox: Reclaiming Your Mental Space</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 13, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                                <div class="post-preview">
+                                    <p>Learn how taking breaks from technology can improve your focus, relationships, and wellbeing.</p>
+                                </div>
+                                <div class="full-content" style="display: none;">
+                                    <p>In our hyper-connected world, constant digital stimulation has become the norm—but at what cost to our mental health?</p>
+                                    
+                                    <h3>Signs You Need a Digital Detox</h3>
+                                    <ul>
+                                        <li>Checking your phone first thing in the morning and last thing at night</li>
+                                        <li>Feeling anxious when separated from your devices</li>
+                                        <li>Difficulty focusing on tasks without checking notifications</li>
+                                        <li>Comparing yourself to others on social media</li>
+                                    </ul>
+                                    
+                                    <h3>Starting Small</h3>
+                                    <p>You don't need to go completely off-grid to benefit from a digital detox:</p>
+                                    <ul>
+                                        <li>Designate tech-free zones (like your bedroom or dining table)</li>
+                                        <li>Set specific times to check email and social media</li>
+                                        <li>Try a "screen-free Sunday" or evening hours without devices</li>
+                                        <li>Delete apps that drain your time and energy</li>
+                                    </ul>
+                                    
+                                    <p>Notice how you feel during these breaks—many people report improved sleep, better concentration, and more meaningful connections.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/nature.jpg" alt="Wellness Post">
+                            </div>
+                            <div class="blog-text">
+                                <span class="category wellness-accent">Wellness</span>
+                                <h2>The Healing Power of Nature</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 7, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                </div>
+                                <div class="post-preview">
+                                    <p>Discover how spending time in natural environments can reduce stress and improve your health.</p>
+                                </div>
+                                <div class="full-content" style="display: none;">
+                                    <p>The Japanese practice of "forest bathing" (shinrin-yoku) isn't just poetic—it's backed by science. Research shows that time in nature has profound effects on our physical and mental wellbeing.</p>
+                                    
+                                    <h3>Benefits of Nature Immersion</h3>
+                                    <ul>
+                                        <li>Reduced cortisol (stress hormone) levels</li>
+                                        <li>Improved immune function</li>
+                                        <li>Enhanced mood and creativity</li>
+                                        <li>Lower blood pressure and heart rate</li>
+                                    </ul>
+                                    
+                                    <h3>Finding Nature Wherever You Are</h3>
+                                    <p>Even in urban environments, you can connect with natural elements:</p>
+                                    <ul>
+                                        <li>Visit local parks, gardens, or waterfront areas</li>
+                                        <li>Bring plants into your home and workspace</li>
+                                        <li>Open windows to let in fresh air and natural sounds</li>
+                                        <li>Notice the sky, clouds, and weather patterns daily</li>
+                                    </ul>
+                                    
+                                    <p>The key is presence—put away your devices and engage your senses fully in the natural world around you.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/gratitude.jpg" alt="Wellness Post">
+                            </div>
+                            <div class="blog-text">
+                                <span class="category wellness-accent">Wellness</span>
+                                <h2>Cultivating a Gratitude Practice</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 8, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                                </div>
+                                <div class="post-preview">
+                                    <p>Learn how the simple act of gratitude can transform your outlook and increase happiness.</p>
+                                </div>
+                                <div class="full-content" style="display: none;">
+                                    <p>Gratitude isn't just a feel-good practice—it's a powerful tool that can rewire your brain for greater happiness and resilience.</p>
+                                    
+                                    <h3>The Science of Gratitude</h3>
+                                    <p>Research shows that regular gratitude practice can:</p>
+                                    <ul>
+                                        <li>Increase happiness and positive emotions</li>
+                                        <li>Reduce symptoms of depression</li>
+                                        <li>Improve sleep quality</li>
+                                        <li>Strengthen relationships</li>
+                                    </ul>
+                                    
+                                    <h3>Simple Gratitude Practices</h3>
+                                    <p>Try these accessible ways to incorporate gratitude into your daily life:</p>
+                                    <ul>
+                                        <li>Keep a gratitude journal—write down 3 things you're thankful for each day</li>
+                                        <li>Share appreciations with loved ones</li>
+                                        <li>Practice gratitude meditation</li>
+                                        <li>Write thank-you notes (even if you don't send them)</li>
+                                    </ul>
+                                    
+                                    <p>The key is consistency—even on difficult days, finding small moments of appreciation can shift your perspective.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 3 Content -->
+                    <div class="page-content" id="page3" style="display: none;">
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/hydration.jpg" alt="Wellness Post">
+                            </div>
+                            <div class="blog-text">
+                                <span class="category wellness-accent">Wellness</span>
+                                <h2>Hydration: The Foundation of Health</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> April 6, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                </div>
+                                <div class="post-preview">
+                                    <p>Explore why proper hydration is crucial for every aspect of your health and how to make it a habit.</p>
+                                </div>
+                                <div class="full-content" style="display: none;">
+                                    <p>Water is essential for nearly every bodily function, yet many of us walk around chronically dehydrated without even realizing it.</p>
+                                    
+                                    <h3>Signs of Dehydration</h3>
+                                    <p>Your body may be telling you it needs more water if you experience:</p>
+                                    <ul>
+                                        <li>Fatigue or low energy</li>
+                                        <li>Headaches</li>
+                                        <li>Difficulty concentrating</li>
+                                        <li>Dry skin, lips, and hair</li>
+                                        <li>Dark urine or infrequent urination</li>
+                                    </ul>
+                                    
+                                    <h3>Making Hydration Effortless</h3>
+                                    <p>Try these strategies to increase your daily water intake:</p>
+                                    <ul>
+                                        <li>Carry a reusable water bottle everywhere</li>
+                                        <li>Set reminders or use tracking apps</li>
+                                        <li>Infuse water with fruits, herbs, or cucumber for flavor</li>
+                                        <li>Eat water-rich foods like watermelon, cucumber, and oranges</li>
+                                    </ul>
+                                    
+                                    <p>Remember that hydration needs vary based on activity level, climate, and individual factors. Listen to your body and adjust accordingly.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-post">
+                            <div class="blog-img">
+                                <img src="../category posts images/sayingno.jpg" alt="Wellness Post">
+                            </div>
+                            <div class="blog-text">
+                                <span class="category wellness-accent">Wellness</span>
+                                <h2>The Art of Saying No: Setting Healthy Boundaries</h2>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> March 25, 2025</span>
+                                    <span class="post-author"><i class="far fa-user"></i> by Khushi</span>
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                </div>
+                                <div class="post-preview">
+                                    <p>Learn how setting clear boundaries can protect your energy and improve your relationships.</p>
+                                </div>
+                                <div class="full-content" style="display: none;">
+                                    <p>Boundaries aren't walls—they're guidelines that define what's acceptable in your relationships and protect your mental and emotional wellbeing.</p>
+                                    
+                                    <h3>Signs You Need Stronger Boundaries</h3>
+                                    <ul>
+                                        <li>Feeling resentful or taken advantage of</li>
+                                        <li>Overcommitting and burning out</li>
+                                        <li>Difficulty saying no without guilt</li>
+                                        <li>Prioritizing others' needs at the expense of your own</li>
+                                    </ul>
+                                    
+                                    <h3>Setting Boundaries with Compassion</h3>
+                                    <p>You can be kind while still being firm:</p>
+                                    <ul>
+                                        <li>Use "I" statements to express your needs</li>
+                                        <li>Be clear and direct rather than apologetic</li>
+                                        <li>Offer alternatives when possible</li>
+                                        <li>Remember that "No" is a complete sentence</li>
+                                    </ul>
+                                    
+                                    <p>Setting boundaries may feel uncomfortable at first, especially if you're used to people-pleasing. Start small and remember that healthy boundaries benefit everyone in the relationship.</p>
+                                </div>
+                                <a href="#" class="read-more" onclick="toggleContent(this); return false;">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="active" onclick="showPage(1); return false;">1</a>
+                        <a href="#" onclick="showPage(2); return false;">2</a>
+                        <a href="#" onclick="showPage(3); return false;">3</a>
+                        <a href="#" class="next" onclick="showNextPage(); return false;">Next <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="lifestyle.html">Lifestyle <span>(12)</span></a></li>
+                            <li><a href="wellness.html">Wellness <span>(9)</span></a></li>
+                            <li><a href="home.html">Home & Living <span>(5)</span></a></li>
+                            <li><a href="creativity.html">Creativity <span>(4)</span></a></li>
+                            <li><a href="mindfulness.html">Mindfulness <span>(10)</span></a></li>
+                            <li><a href="personal-growth.html">Personal Growth <span>(7)</span></a></li>
+                        </ul>
+                    </div>
+            <!-------------------------------POPULAR POSTS---------------------------->
+                    <div class="sidebar-widget popular-posts-widget">
+                        <div class="widget-title">
+                            <h3>Popular Posts</h3>
+                        </div>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/morningroutine1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="lifestyle.html">Creating a Mindful Morning Routine</a></h4>
+                                    <span>March 1, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/selfcare1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="wellness.html">Simple Self-Care Practices for Busy Days</a></h4>
+                                    <span>March 18, 2025</span>
+                                </div>
+                            </div>
+                            
+                            <div class="popular-post">
+                                <div class="popular-img">
+                                    <img src="../images/livingSpace1.jpg" alt="Popular Post">
+                                </div>
+                                <div class="popular-text">
+                                    <h4><a href="home.html">Creating a Cozy and Inviting Space</a></h4>
+                                    <span>March 20, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Newsletter Subscription Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Join the Community</h2>
+                    <p>Sign up for our newsletter to receive updates, exclusive content, and more.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+   <!---------------------------- Footer Section - Consistent across all pages ------------------------------->
+ <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <h2>Beyond Boundaries</h2>
+                </div>
+                <p>Empowering individuals to live mindfully, embrace creativity, and find joy in everyday moments. Join our community of like-minded souls on a journey of self-discovery.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/beyondboundaries_blog" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/beyond_bounds" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../tracker.html">Tracker</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                        <li><a href="wellness.html">Wellness</a></li>
+                        <li><a href="lifestyle.html">Lifestyle</a></li>
+                        <li><a href="creativity.html">Creativity</a></li>
+                        <li><a href="personal-growth.html">Personal Growth</a></li>
+                        <li><a href="home.html">Home & Living</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@beyondboundaries.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Mindful Street, Wellness City, WC 12345</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2025 Beyond Boundaries. All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- JavaScript Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+    <script>
+        function toggleContent(button) {
+            // Find the closest blog-post parent
+            const blogPost = button.closest('.blog-post');
+            
+            // Find the preview and full content within this blog post
+            const preview = blogPost.querySelector('.post-preview');
+            const fullContent = blogPost.querySelector('.full-content');
+            
+            // Toggle visibility
+            if (fullContent.style.display === 'none') {
+                preview.style.display = 'none';
+                fullContent.style.display = 'block';
+                button.textContent = 'Show Less';
+            } else {
+                preview.style.display = 'block';
+                fullContent.style.display = 'none';
+                button.textContent = 'Continue Reading';
+            }
+            
+            // Scroll to the top of this blog post
+            blogPost.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showPage(pageNumber) {
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach((page, index) => {
+                if (index + 1 === pageNumber) {
+                    page.style.display = 'block';
+                } else {
+                    page.style.display = 'none';
+                }
+            });
+            updatePagination(pageNumber);
+        }
+
+        function showNextPage() {
+            const currentPage = document.querySelector('.pagination .active').textContent;
+            const nextPage = parseInt(currentPage) + 1;
+            if (nextPage <= 3) {
+                showPage(nextPage);
+            }
+        }
+
+        function updatePagination(activePage) {
+            const paginationLinks = document.querySelectorAll('.pagination a');
+            paginationLinks.forEach(link => {
+                if (link.textContent.trim() === activePage.toString()) {
+                    link.classList.add('active');
+                } else if (!link.classList.contains('next')) {
+                    link.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+

@@ -1,5 +1,11 @@
-/* Base Styles */
+/**
+ * Base Styles
+ * Contains core styling and variables used throughout the site
+ */
+
+/* Global CSS Variables */
 :root {
+    /* Color Palette */
     --primary-color: #f8f3ef;
     --secondary-color: #e8d9d0;
     --accent-color: #d4b8a8;
@@ -7,15 +13,19 @@
     --light-text: #777777;
     --white: #ffffff;
     --black: #000000;
+    
+    /* Transitions */
     --transition: all 0.3s ease;
 }
 
+/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base Typography */
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
@@ -23,12 +33,14 @@ body {
     line-height: 1.6;
 }
 
+/* Heading Styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     line-height: 1.3;
 }
 
+/* Link Styles */
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -39,12 +51,14 @@ a:hover {
     color: var(--accent-color);
 }
 
+/* Image Styles */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
+/* Container Layout */
 .container {
     width: 90%;
     max-width: 1200px;

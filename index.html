@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Beyond Boundaries</title>
+
+    <!-- External CSS Dependencies -->
+    <!-- Bootstrap CSS for responsive grid and components -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="/images/logoimage.jpeg" type="image/x-icon">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logoimage.jpeg" type="image/x-icon">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header - Use this same header in all pages -->
+    <!------------------------- Header Section - Consistent across all pages ------------------------>
     <header>
         <div class="container">
             <nav>
+                <!-- Logo and Site Title -->
                 <div class="logo">
-                    <img src="images/logoimage.jpeg" alt="logo" width="60">
+                    <a href="/index.html"><img src="images/logoimage.jpeg" alt="logo" width="60"></a>
                     <h1>Beyond Boundaries</h1>
                 </div>
+                
+                <!-- Navigation Links -->
                 <ul class="nav-links">
                     <li><a href="index.html" data-i18n="home">Home</a></li>
                     <li><a href="about.html" data-i18n="about">About</a></li>
@@ -28,7 +44,12 @@
                     <li><a href="tracker.html" data-i18n="tracker">Tracker</a></li>
                     <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                 </ul>
-                
+                <div class="user-profile">
+                    <a href="profile.html" class="profile-icon">
+                        <i class="fas fa-user-circle fa-lg"></i>
+                    </a>
+                </div>
+                <!-- Mobile Menu Hamburger Icon -->
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -37,33 +58,40 @@
             </nav>
         </div>
     </header>
-<!------------------------------ CAROUSEL USING  BOOTSTRAP ------------------------------->
+
+    <!-- Hero Section with Bootstrap Carousel -->
     <section class="hero">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Indicators -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
             </div>
+            
+            <!-- Carousel Slides -->
             <div class="carousel-inner">
+                <!-- Slide 1 - Welcome -->
                 <div class="carousel-item active">
-                    <img src="/images/main.jpg" class="d-block w-100" alt="Slide 1">
+                    <img src="./images/main.jpg" class="d-block w-100" alt="Slide 1">
                     <div class="carousel-caption hero-content">
                         <h1>Welcome to my Blog</h1>
                         <p>Discover a world of inspiration, creativity, and everyday joy</p>
                         <a href="blog.html" class="btn">Explore</a>
                     </div>
                 </div>
+                <!-- Slide 2 - Mindful Living -->
                 <div class="carousel-item">
-                    <img src="/images/mindfulliving.jpg" class="d-block w-100" alt="Slide 2">
+                    <img src="./images/mindfulliving.jpg" class="d-block w-100" alt="Slide 2">
                     <div class="carousel-caption hero-content">
                         <h1>Mindful Living</h1>
                         <p>Embrace the beauty of everyday moments</p>
                         <a href="blog.html" class="btn">Learn More</a>
                     </div>
                 </div>
+                <!-- Slide 3 - Creative Journey -->
                 <div class="carousel-item">
-                    <img src="/images/creative.jpg" class="d-block w-100" alt="Slide 3">
+                    <img src="./images/creative.jpg" class="d-block w-100" alt="Slide 3">
                     <div class="carousel-caption hero-content">
                         <h1>Creative Journey</h1>
                         <p>Join me on this path of self-discovery and growth</p>
@@ -82,84 +110,90 @@
         </div>
     </section>
 
+
+    <!------------ Featured Posts Section ------------->
     <section class="featured">
         <div class="container">
             <h2 class="section-title">Featured Posts</h2>
             <div class="featured-grid">
+
+                <!-------------- Featured Post Items ------------>
                 <div class="featured-item">
                     <div class="featured-img">
-                        <img src="/images/morningroutine.jpg" alt="Featured Post">
+                        <img src="./images/morningroutine.jpg" alt="Featured Post">
                     </div>
                     <div class="featured-content">
                         <span class="category">Lifestyle</span>
                         <h3>Creating a Mindful Morning Routine</h3>
                         <p>Start your day with intention and purpose with these simple morning rituals.</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <a href="/categories/lifestyle.html" class="read-more">Read More</a>
                     </div>
                 </div>
                 <div class="featured-item">
                     <div class="featured-img">
-                        <img src="/images/selfcare.jpg" alt="Featured Post">
+                        <img src="./images/selfcare.jpg" alt="Featured Post">
                     </div>
                     <div class="featured-content">
                         <span class="category">Wellness</span>
                         <h3>Simple Self-Care Practices for Busy Days</h3>
                         <p>Incorporate these quick self-care rituals into your busy schedule.</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <a href="/categories/wellness.html" class="read-more">Read More</a>
                     </div>
                 </div>
                 <div class="featured-item">
                     <div class="featured-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Featured Post">
+                        <img src="./images/livingSpace.jpg" alt="Featured Post">
                     </div>
                     <div class="featured-content">
-                        <span class="category">Home</span>
+                        <span class="category">Home & Living</span>
                         <h3>Creating a Cozy and Inviting Space</h3>
                         <p>Transform your home into a sanctuary with these simple decorating tips.</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <a href="/categories/home.html" class="read-more">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!------------------------ About Preview Section ------------------------>
     <section class="about-preview">
         <div class="container">
             <div class="about-grid">
                 <div class="about-img">
-                    <img src="https://via.placeholder.com/600x800" alt="About">
+                    <img src="./images/about.jpg" alt="About">
                 </div>
                 <div class="about-content">
-                    <h2>Hello, I'm Khushi</h2>
-                    <p>Welcome to my little corner of the internet. I created this space to share my passion for mindful living, creativity, and finding joy in the everyday moments.</p>
-                    <p>Through my blog, I hope to inspire you to embrace a life of intention, creativity, and everyday flourishing.</p>
+                    <h2>Hello, We're K&K</h2>
+                    <p>Welcome to our little corner of the internet. We created this space to share our passion for mindful living, creativity, and finding joy in the everyday moments.</p>
+                    <p>Through our blog, we hope to inspire you to embrace a life of intention, creativity, and everyday flourishing.</p>
                     <a href="about.html" class="btn">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!------------------------------- Instagram Feed Section ------------------------------->
     <section class="instagram">
         <div class="container">
             <h2 class="section-title">Follow Along on Instagram</h2>
             <div class="instagram-grid">
                 <div class="instagram-item">
-                    <img src="https://via.placeholder.com/300x300" alt="Instagram">
+                    <img src="./images/insta1.jpg" alt="Instagram">
                 </div>
                 <div class="instagram-item">
-                    <img src="https://via.placeholder.com/300x300" alt="Instagram">
+                    <img src="./images/insta2.jpg" alt="Instagram">
                 </div>
                 <div class="instagram-item">
-                    <img src="https://via.placeholder.com/300x300" alt="Instagram">
+                    <img src="./images/insta3.jpg" alt="Instagram">
                 </div>
                 <div class="instagram-item">
-                    <img src="https://via.placeholder.com/300x300" alt="Instagram">
+                    <img src="./images/insta4.jpg" alt="Instagram">
                 </div>
                 <div class="instagram-item">
-                    <img src="https://via.placeholder.com/300x300" alt="Instagram">
+                    <img src="./images/insta5.jpg" alt="Instagram">
                 </div>
                 <div class="instagram-item">
-                    <img src="https://via.placeholder.com/300x300" alt="Instagram">
+                    <img src="./images/insta6.jpg" alt="Instagram">
                 </div>
             </div>
             <div class="instagram-cta">
@@ -168,11 +202,13 @@
         </div>
     </section>
 
+
+    <!-------------------------- Newsletter Subscription Section --------------------------->
     <section class="newsletter">
         <div class="container">
             <div class="newsletter-content">
                 <h2>Join the Community</h2>
-                <p>Sign up for my newsletter to receive updates, exclusive content, and more.</p>
+                <p>Sign up for our newsletter to receive updates, exclusive content, and more.</p>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Your email address" required>
                     <button type="submit" class="btn">Subscribe</button>
@@ -181,7 +217,9 @@
         </div>
     </section>
 
-    <!-- Footer - Use this same footer in all pages -->
+
+
+    <!---------------------------- Footer Section - Consistent across all pages ------------------------------->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -191,10 +229,10 @@
                     </div>
                     <p>Empowering individuals to live mindfully, embrace creativity, and find joy in everyday moments. Join our community of like-minded souls on a journey of self-discovery.</p>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/beyondboundaries_blog" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.facebook.com/beyondboundaries" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/beyond_bounds" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
 
@@ -215,11 +253,12 @@
                     <h3>Categories</h3>
                     <div class="footer-links">
                         <ul>
-                            <li><a href="#">Mindfulness</a></li>
-                            <li><a href="#">Wellness</a></li>
-                            <li><a href="#">Lifestyle</a></li>
-                            <li><a href="#">Creativity</a></li>
-                            <li><a href="#">Personal Growth</a></li>
+                            <li><a href="categories/mindfulness.html">Mindfulness</a></li>
+                            <li><a href="categories/wellness.html">Wellness</a></li>
+                            <li><a href="categories/lifestyle.html">Lifestyle</a></li>
+                            <li><a href="categories/creativity.html">Creativity</a></li>
+                            <li><a href="categories/personal-growth.html">Personal Growth</a></li>
+                            <li><a href="categories/home.html">Home & Living</a></li>
                         </ul>
                     </div>
                 </div>
@@ -245,7 +284,7 @@
 
             <div class="footer-bottom">
                 <div class="copyright">
-                    <p>&copy; 2023 Beyond Boundaries. All Rights Reserved.</p>
+                    <p>&copy; 2025 Beyond Boundaries. All Rights Reserved.</p>
                 </div>
                 <div class="footer-bottom-links">
                     <a href="#">Privacy Policy</a>
@@ -256,22 +295,12 @@
         </div>
     </footer>
 
+
+    <!-- JavaScript Dependencies -->
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Scripts -->
     <script src="js/common.js"></script>
     <script src="js/home.js"></script>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
